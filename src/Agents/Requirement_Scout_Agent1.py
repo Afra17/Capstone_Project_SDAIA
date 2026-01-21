@@ -34,7 +34,7 @@ class Extractor_agent:
     def __init__(self, llm, output_dir="./output"):
         self.llm = llm
         self.output_dir = output_dir
-        with open(r"C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\Capstone_Project_SDAIA\src\Agents\request.md", "r", encoding="utf-8") as f:
+        with open(r"C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\Capstone_Project_SDAIA\src\Agents\request1_final_clean3.md", "r", encoding="utf-8") as f:
             self.full_md_content = f.read()
         self.selected_sections = self._load_toc_data()
         
@@ -45,7 +45,7 @@ class Extractor_agent:
         
     def _load_toc_data(self):
         # تأكد من صحة المسار لديك
-        json_file_path = r"C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\Capstone_Project_SDAIA\src\outputs\selscted.json"
+        json_file_path = r"C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\Capstone_Project_SDAIA\src\outputs\selected_sections.json"
         try:
             with open(json_file_path, 'r', encoding='utf-8') as f:
                 toc_data = json.load(f)
@@ -56,14 +56,14 @@ class Extractor_agent:
 
     def _create_agent(self):
         return Agent(
-            role="RFP Contextual Analyst",
-            goal="Identify and interpret essential requirements and evaluation criteria by understanding the semantic meaning of the text .",
+            role="RFP Contextual Analyst (Arabic Specialist)",
+            goal="Identify and interpret essential requirements and evaluation criteria, providing all outputs in clear, professional Arabic.",
             backstory=(
-        """You are a strategic consultant with deep knowledge of Saudi Government procurement law. 
-                You don't just look for keywords; you analyze the 'intent' of each paragraph. 
-                You can distinguish between a general description and a binding obligation. 
-                Even if a requirement is phrased subtly, you can identify it as a mandatory element or a scoring criterion.
-            """),
+                "You are a strategic consultant with deep knowledge of Saudi Government procurement law (Etimad). "
+                "You excel at analyzing complex RFP documents and extracting binding obligations. "
+                "You provide your findings in professional Arabic, ensuring technical terms are accurately translated "
+                "and contextually appropriate for the Saudi market."
+            ),
             llm=self.llm,
             verbose=True,
             allow_delegation=False,
@@ -72,21 +72,22 @@ class Extractor_agent:
     def _create_task(self):
         return Task(
             description=f"""
-            Analyze the RFP content{self.full_md_content} within the following selected headings:
+            Analyze the RFP content {self.full_md_content} focusing on these sections:
             {self.selected_sections}
-            YOUR ANALYSIS MISSION:
-            1. **Semantic Understanding**: Read each paragraph to understand its purpose. If the text defines a standard the bidder must meet or a condition for success, mark it as an 'Essential Requirement'.
-            2. **Identify Evaluation Logic**: Spot criteria that influence the 'Scoring' . Look for qualitative measures (e.g., 'quality of previous work', 'methodology effectiveness') not just quantitative ones.
-            3. **Extract Hidden Obligations**: Sometimes requirements are implied within descriptions of the 'Scope of Work'. If a task is described as a part of the project, it is a requirement.
-            
-            EXTRACT THE FOLLOWING FOR EACH IDENTIFIED ELEMENT:
-            - **The Requirement**: The core essence of what is being asked (paraphrased for clarity if needed).
-            - **Percentage/Value**: Any numerical weight or financial ratio associated with it (e.g., 5% Guarantee, 20% Local Content weight). Write 'Not Specified' if absent.
-            - **Deadlines/Timelines**: Any temporal constraint (e.g., 'within 10 days', 'before the bid closing').
+
+            YOUR ANALYSIS MISSION (Output must be in ARABIC):
+            1. **Semantic Understanding**: استخراج المتطلبات الجوهرية والمعايير التي يجب على مقدم العرض الالتزام بها.
+            2. **Identify Evaluation Logic**: تحديد معايير التقييم ونقاط المفاضلة (النوعية والكمية).
+            3. **Extract Hidden Obligations**: استخراج الالتزامات الضمنية الموجودة داخل نطاق العمل.
+
+            FOR EACH ELEMENT, EXTRACT IN ARABIC:
+            - **The Requirement**: نص المتطلب بأسلوب واضح ومختصر.
+            - **Percentage/Value**: القيمة الرقمية أو النسبة المئوية (مثل: الضمان البنكي 1%، وزن المحتوى المحلي 20%). اكتب 'غير محدد' إذا لم توجد.
+            - **Deadlines/Timelines**: التواريخ النهائية أو المواعيد الزمنية المرتبطة بالمتطلب.
             """,
-            expected_output="A JSON object containing the list of proposed mandatory requirements",
+            expected_output="A JSON object containing the list of proposed mandatory requirements in Arabic.",
             output_json=FinalRequirementsOutput,
-            output_file=os.path.join(self.output_dir, "contextual_requirements.json"),
+            output_file=os.path.join(self.output_dir, "contextual_requirements_ar.json"),
             agent=self.agent
         )
 

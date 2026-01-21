@@ -8,8 +8,6 @@ import os
 from crewai_tools import FileReadTool
 from agentic_doc.parse import parse
 from dotenv import load_dotenv
-import langchain
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 import json
 
 
@@ -20,7 +18,6 @@ VISION_AGENT_API_KEY=os.environ["VISION_AGENT_API_KEY"]
 
 class SelectedSection(BaseModel):
     section_name: str = Field(..., description="The exact text of the heading")
-    reason: str = Field(..., description="Why is this relevant? (e.g., Mandatory Requirement)")
 
 class ScoutOutput(BaseModel):
     selected_sections: List[SelectedSection]
@@ -48,14 +45,14 @@ class selected_agent:
     
     def _create_agent(self):
         return Agent(
-            role="Table of content Analysis Expert",
-            goal="""Analyze RFP Table of Contents and identify sections containing:
+        role="RFP Strategic Scout",
+        goal="""Analyze RFP Table of Contents and identify sections containing:
             - Proposal evaluation criteria
             - Mandatory requirements
             - Weights and scoring
             - Deadlines
-            - Disqualification conditions""",   
-            backstory=""" "You are an expert Proposal Manager for government tenders (Etimad).
+            - Disqualification conditions""",
+        backstory="""You are an expert Proposal Manager for government tenders (Etimad).
                 "Your job is to filter the Table of Contents. 
                 "You know that sections like 'Introduction' or 'Definitions' are informational and irrelevant for evaluation. 
                 "However, sections like 'Scope of Work', 'Technical Specifications', 'General Provisions', 'Submission Method', and 'Evaluation Criteria' are critical.""",
@@ -66,7 +63,7 @@ class selected_agent:
     
     def _create_task(self):
         return Task(
-            description=f"""Analyze the following Table of Contents (JSON/Text) from an RFP document:
+             description=f"""Analyze the following Table of Contents (JSON/Text) from an RFP document:
             { self.toc_string_for_prompt}
             YOUR MISSION:
             1. Identify headings that imply a **mandatory requirement**, **evaluation criteria**, or **submission instruction**.

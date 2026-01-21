@@ -1,16 +1,37 @@
 {
-    "selected_sections": [
-      {
-        "section_name": "19 الاستبعاد من المنافسة",
-        "reason": "Mandatory Requirement"
-      },
-      {
-        "section_name": "24 إلزامية العرض",
-        "reason": "Mandatory Requirement"
-      },
-      {
-        "section_name": "25 الموافقة على الشروط",
-        "reason": "Mandatory Requirement"
-      }
-    ]
+  "selected_sections": [
+    {
+      "section_name": "القسم الثاني : الأحكام العامة",
+      "reason": "General Provisions often contain mandatory Saudi laws or environmental standards"
+    },
+    {
+      "section_name": "10 المساواة والشفافية",
+    },
+    {
+      "section_name": "11 تعارض المصالح",
+    },
+    {
+      "section_name": "12 السلوكيات والأخلاقيات",
+    },
+    {
+      "section_name": "13 السرية وإفشاء المعلومات",
+    },
+    {
+      "section_name": "14 ملكية وثائق المنافسة",
+    },
+    {
+      "section_name": "15 حقوق الملكية الفكرية",
+    },
+    {
+      "section_name": "16 المحتوى المحلي"
+    },
+    {
+      "section_name": "17 أنظمة وأحكام الاستيراد"
+    },
+    {
+      "section_name": "18 تجزئة المنافسة"
+    },
+    {
+      "section_name": "19 الاستبعاد من المنافسة"
     }
+  ]}

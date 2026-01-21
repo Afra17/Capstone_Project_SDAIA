@@ -1,132 +1,196 @@
 {
   "selected_sections": [
     {
-      "section_name": "19 الاستبعاد من المنافسة",
-      "reason": "Mandatory Requirement"
+      "section_name": "10 المساواة والشفافية"
     },
     {
-      "section_name": "24 إلزامية العرض",
-      "reason": "Mandatory Requirement"
+      "section_name": "11 تعارض المصالح"
     },
     {
-      "section_name": "25 الموافقة على الشروط",
-      "reason": "Mandatory Requirement"
+      "section_name": "12 السلوكيات والأخلاقيات"
     },
     {
-      "section_name": "44 آلية تقديم العروض",
-      "reason": "Submission Instruction"
+      "section_name": "13 السرية وإفشاء المعلومات"
     },
     {
-      "section_name": "45 تسليم العروض المتأخرة",
-      "reason": "Submission Instruction"
+      "section_name": "14 ملكية وثائق المنافسة"
     },
     {
-      "section_name": "46 تمديد فترة تلقي العروض وتأجيل فتحها",
-      "reason": "Submission Instruction"
+      "section_name": "15 حقوق الملكية الفكرية"
     },
     {
-      "section_name": "47 الانسحاب",
-      "reason": "Submission Instruction"
+      "section_name": "16 المحتوى المحلي"
     },
     {
-      "section_name": "48 فتح العروض",
-      "reason": "Submission Instruction"
+      "section_name": "17 أنظمة وأحكام الاستيراد"
     },
     {
-      "section_name": "50 معايير تقييم العروض",
-      "reason": "Evaluation Criteria"
+      "section_name": "18 تجزئة المنافسة"
     },
     {
-      "section_name": "51 تصحيح العروض",
-      "reason": "Evaluation Criteria"
+      "section_name": "19 الاستبعاد من المنافسة"
     },
     {
-      "section_name": "52 فحص العروض",
-      "reason": "Evaluation Criteria"
+      "section_name": "20 إلغاء المنافسة وأثره"
     },
     {
-      "section_name": "53 الإعلان عن نتائج المنافسة",
-      "reason": "Evaluation Criteria"
+      "section_name": "21 التفاوض مع أصحاب العروض"
     },
     {
-      "section_name": "54 فترة التوقف",
-      "reason": "Evaluation Criteria"
+      "section_name": "22 التعاقد من الباطن"
     },
     {
-      "section_name": "55 إخطار الترسية",
-      "reason": "Evaluation Criteria"
+      "section_name": "23 التأهيل اللاحق"
     },
     {
-      "section_name": "56 الضمان النهائي",
-      "reason": "Evaluation Criteria"
+      "section_name": "24 إلزامية العرض"
     },
     {
-      "section_name": "57 توقيع العقد",
-      "reason": "Evaluation Criteria"
+      "section_name": "25 الموافقة على الشروط"
     },
     {
-      "section_name": "58 الغرامات",
-      "reason": "Evaluation Criteria"
+      "section_name": "26 لغة العرض"
     },
     {
-      "section_name": "59 غرامات التأخير",
-      "reason": "Evaluation Criteria"
+      "section_name": "27 العملة المعتمدة"
     },
     {
-      "section_name": "60 غرامات مخالفة أحكام لائحة تفضيل المحتوى المحلي",
-      "reason": "Evaluation Criteria"
+      "section_name": "28 صلاحية العروض"
     },
     {
-      "section_name": "61 إجمالي الغرامات",
-      "reason": "Evaluation Criteria"
+      "section_name": "29 تكلفة إعداد العروض"
     },
     {
-      "section_name": "62 التأمين",
-      "reason": "Evaluation Criteria"
+      "section_name": "30 الإخطارات والمراسلات"
     },
     {
-      "section_name": "63 نطاق عمل المشروع",
-      "reason": "Mandatory Requirement"
+      "section_name": "31 ضمان المعلومات"
     },
     {
-      "section_name": "64 برنامج تقديم الأعمال",
-      "reason": "Mandatory Requirement"
+      "section_name": "32 الأسئلة والاستفسارات"
     },
     {
-      "section_name": "65 مكان تنفيذ الأعمال",
-      "reason": "Mandatory Requirement"
+      "section_name": "33 حصول المتنافسين على كافة المعلومات الضرورية"
     },
     {
-      "section_name": "66 جدول الكميات والأسعار",
-      "reason": "Mandatory Requirement"
+      "section_name": "34 وثائق العرض الفني"
     },
     {
-      "section_name": "67 فريق العمل",
-      "reason": "Mandatory Requirement"
+      "section_name": "35 وثائق العرض المالي"
     },
     {
-      "section_name": "68 الأصناف والمواد",
-      "reason": "Mandatory Requirement"
+      "section_name": "36 كتابة الأسعار"
     },
     {
-      "section_name": "69 المعدات",
-      "reason": "Mandatory Requirement"
+      "section_name": "37 جدول الدفعات"
     },
     {
-      "section_name": "70 طريقة تنفيذ الأعمال والخدمات",
-      "reason": "Mandatory Requirement"
+      "section_name": "38 الضرائب والرسوم"
     },
     {
-      "section_name": "71 مواصفات الجودة",
-      "reason": "Mandatory Requirement"
+      "section_name": "39 الأحكام العامة للضمانات"
     },
     {
-      "section_name": "72 مواصفات السلامة",
-      "reason": "Mandatory Requirement"
+      "section_name": "40 الضمان الابتدائي"
     },
     {
-      "section_name": "73 القائمة الإلزامية",
-      "reason": "Mandatory Requirement"
+      "section_name": "41 مصادرة الضمانات"
+    },
+    {
+      "section_name": "42 العروض البديلة"
+    },
+    {
+      "section_name": "43 متطلبات تنسيق العروض"
+    },
+    {
+      "section_name": "44 آلية تقديم العروض"
+    },
+    {
+      "section_name": "45 تسليم العروض المتأخرة"
+    },
+    {
+      "section_name": "46 تمديد فترة تلقي العروض وتأجيل فتحها"
+    },
+    {
+      "section_name": "47 الانسحاب"
+    },
+    {
+      "section_name": "48 فتح العروض"
+    },
+    {
+      "section_name": "49 سرية تقييم العروض"
+    },
+    {
+      "section_name": "50 معايير تقييم العروض"
+    },
+    {
+      "section_name": "51 تصحيح العروض"
+    },
+    {
+      "section_name": "52 فحص العروض"
+    },
+    {
+      "section_name": "53 الإعلان عن نتائج المنافسة"
+    },
+    {
+      "section_name": "54 فترة التوقف"
+    },
+    {
+      "section_name": "55 إخطار الترسية"
+    },
+    {
+      "section_name": "56 الضمان النهائي"
+    },
+    {
+      "section_name": "57 توقيع العقد"
+    },
+    {
+      "section_name": "58 الغرامات"
+    },
+    {
+      "section_name": "59 غرامات التأخير"
+    },
+    {
+      "section_name": "60 غرامات مخالفة أحكام لائحة تفضيل المحتوى المحلي"
+    },
+    {
+      "section_name": "61 إجمالي الغرامات"
+    },
+    {
+      "section_name": "62 التأمين"
+    },
+    {
+      "section_name": "63 نطاق عمل المشروع"
+    },
+    {
+      "section_name": "64 برنامج تقديم الأعمال"
+    },
+    {
+      "section_name": "65 مكان تنفيذ الأعمال"
+    },
+    {
+      "section_name": "66 جدول الكميات والأسعار"
+    },
+    {
+      "section_name": "67 فريق العمل"
+    },
+    {
+      "section_name": "68 الأصناف والمواد"
+    },
+    {
+      "section_name": "69 المعدات"
+    },
+    {
+      "section_name": "70 طريقة تنفيذ الأعمال والخدمات"
+    },
+    {
+      "section_name": "71 مواصفات الجودة"
+    },
+    {
+      "section_name": "72 مواصفات السلامة"
+    },
+    {
+      "section_name": "73 القائمة الإلزامية"
     }
   ]
 }
