@@ -1,0 +1,8 @@
+pypdf
+pymupdf
+chromadb
+scikit-learn
+numpy
+groq
+pandas
+markitdown
