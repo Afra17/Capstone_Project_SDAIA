@@ -11,10 +11,7 @@ from typing import List
 from crewai.tools import tool
 from pydantic import BaseModel, Field
 import os
-from crewai_tools import FileReadTool
-from agentic_doc.parse import parse
 from dotenv import load_dotenv
-import json
 import re
 
 load_dotenv()
@@ -30,58 +27,73 @@ class ScoutOutput(BaseModel):
     selected_sections: List[SelectedSection]
 
 
+class SelectedSection(BaseModel):
+    section_name: str = Field(..., description="The exact text of the heading")
+    relevance_score: int = Field(..., description="Importance level from 0-100")
+    
+class ScoutOutput(BaseModel):
+    selected_sections: List[SelectedSection]
+
 class selected_agent:
-    def __init__(self, llm, md_path,output_dir="./output"):
+    def __init__(self, llm, md_path, output_dir="./output"):
         self.llm = llm
         self.md_path = md_path      
         self.output_dir = output_dir  
-##-----------------------------------------------
+        
+        # إنشاء الأداة وربطها بالمسار الحالي قبل بناء العميل
+        self.sections_tool = self._setup_tool()
+        
         self.agent = self._create_agent()
         self.task = self._create_task()
 
-    @tool("rfp_sections_preview_tool")
-    def _get_contextual_toc(self, segment_size=600):
+    def _setup_tool(self):
         """
-        Reads the markdown file and extracts the full content of the selected sections.
-        Input should be a list of section titles.
+        إعداد الأداة كدالة مغلفة (Closure) لتجنب مشكلة 'self' واللوب
         """
-        if not os.path.exists(self.md_path):
-            return "Error: File not found."
-            
-        with open(self.md_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # تقسيم النص بناءً على العناوين
-        sections = re.split(r'\n(?=#+\s|\d+\s*-\s)', content)
-        smart_toc = []
-        
-        for sec in sections:
-            lines = sec.strip().split('\n')
-            if not lines:
-                continue
+        @tool("rfp_sections_preview_tool")
+        def rfp_sections_preview_tool(segment_size: int = 600):
+            """
+            Reads the RFP markdown file and returns a list of all section titles with smart previews.
+            Use this to see the Table of Contents and understand what each section contains.
+            """
+            # نستخدم self.md_path مباشرة هنا؛ الدالة "تتذكر" المسار من الكلاس الأب
+            if not os.path.exists(self.md_path):
+                return "Error: File not found at the specified path."
                 
-            title = lines[0].strip()
-            body = " ".join([l.strip() for l in lines[1:] if l.strip()])
-            
-            # إذا كان النص طويلاً جداً، نأخذ عينات من أماكن مختلفة
-            if len(body) > segment_size * 2:
-                start_part = body[:segment_size]
-                # أخذ عينة من المنتصف
-                mid_point = len(body) // 2
-                mid_part = body[mid_point : mid_point + segment_size]
-                # أخذ عينة من النهاية
-                end_part = body[-segment_size:]
+            try:
+                with open(self.md_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
                 
-                preview = f"[START]: {start_part} ... [MIDDLE]: {mid_part} ... [END]: {end_part}"
-            else:
-                preview = body
+                # تقسيم النص بناءً على العناوين (Markdown headers or numeric Arabic headers)
+                sections = re.split(r'\n(?=#+\s|\d+\s*-\s)', content)
+                smart_toc = []
                 
-            smart_toc.append({
-                "title": title,
-                "preview": preview,
-                "total_section_length": len(body) # نعطي العميل فكرة عن حجم القسم
-            })
-        return smart_toc
+                for sec in sections:
+                    lines = sec.strip().split('\n')
+                    if not lines: continue
+                        
+                    title = lines[0].strip()
+                    body = " ".join([l.strip() for l in lines[1:] if l.strip()])
+                    
+                    if len(body) > segment_size * 2:
+                        start_part = body[:segment_size]
+                        mid_point = len(body) // 2
+                        mid_part = body[mid_point : mid_point + segment_size]
+                        end_part = body[-segment_size:]
+                        preview = f"[START]: {start_part} ... [MID]: {mid_part} ... [END]: {end_part}"
+                    else:
+                        preview = body
+                        
+                    smart_toc.append({
+                        "title": title,
+                        "preview": preview,
+                        "total_length": len(body)
+                    })
+                return smart_toc
+            except Exception as e:
+                return f"An error occurred while reading the file: {str(e)}"
+
+        return rfp_sections_preview_tool
         
     
     def _create_agent(self):
@@ -94,7 +106,7 @@ class selected_agent:
                 "However, sections like 'Scope of Work', 'Technical Specifications', 'General Provisions', 'Submission Method', and 'Evaluation Criteria' are critical.""",
             llm=self.llm,
             verbose=True,
-            tools=[self._get_contextual_toc],
+            tools=[self.sections_tool],
             allow_delegation=False,
         )
     

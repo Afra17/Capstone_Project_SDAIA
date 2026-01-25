@@ -9,8 +9,6 @@ from crewai import Agent, Task
 from pydantic import BaseModel, Field
 from typing import List
 from crewai.tools import tool
-from typing import List
-from pydantic import BaseModel, Field
 import os
 from dotenv import load_dotenv
 import json
@@ -23,7 +21,8 @@ class MandatoryRequirement(BaseModel):
     requirement_text: str = Field(..., description="Text of the extracted technical or administrative requirement")
     percentage: str = Field("Not Specified", description="Percentage associated with the requirement ")
     deadline: str = Field("Not Specified", description="Date or deadline associated with this requirement")
-
+    category: str = Field(..., description="Requirement classification: (Technical, Administrative, Financial)")    
+    section_name: str =Field(..., description="section name of the requerment")
 class FinalRequirementsOutput(BaseModel):
     requirements: List[MandatoryRequirement]
 
@@ -35,27 +34,63 @@ class Extractor_agent:
         self.md_path = md_path
         self.scout_json_path = scout_json_path
         self.output_dir = output_dir
+        self.extraction_tool = self._setup_extraction_tool()
 ##-----------------------------------------------
         self.agent = self._create_agent()
         self.task = self._create_task()
 
-    @tool("rfp_text_extractor_tool")
-    def cut_full_text(self, titles: list):
-        """
-        Extracts the full text content of specific sections from the RFP markdown file.
-        Input should be a list of exact section titles found during the scout phase.
-        """
-        with open(self.md_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        extracted = []
-        for title in titles:
-                pattern = rf"(?ms)^#*\s*{re.escape(title)}.*?(?=\n#|\n\d+\s*-\s|\Z)"
-                match = re.search(pattern, content)
-                if match: 
-                    extracted.append(match.group(0))
-                else:
-                    extracted.append(f"--- [Warning: Section '{title}' not found in the file] ---")
-        return "\n\n---\n\n".join(extracted)
+
+    def _setup_extraction_tool(self):
+        # سحب المسارات لداخل نطاق الأداة
+        scout_json = self.scout_json_path
+        md_file = self.md_path
+
+        @tool("rfp_text_extractor_tool")
+        def rfp_text_extractor_tool():
+            """
+            Automatically reads selected sections from the Scout JSON file 
+            and extracts their full content from the Markdown RFP.
+            """
+            import json
+            import re
+            
+            try:
+                # 1. قراءة ملف العناوين الذي أنتجه الـ Scout
+                with open(scout_json, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # استخراج قائمة الأسماء فقط
+                sections = data.get('selected_sections', [])
+                if not sections:
+                    return "No sections found in the scout JSON file."
+
+                # 2. قراءة ملف الماركدوان الأصلي
+                with open(md_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+
+                extracted_data = []
+                for item in sections:
+                    title = item.get('section_name', '')
+                    # تنظيف العنوان للبحث
+                    clean_title = title.replace('#', '').strip()
+                    
+                    # باترن مرن للبحث عن النص تحت العنوان
+                    pattern = rf"(?ms)^#*\s*.*{re.escape(clean_title)}.*?\n(.*?)(?=\n#|\n\d+\s*-\s|\Z)"
+                    match = re.search(pattern, content)
+                    
+                    if match:
+                        text_content = match.group(1).strip()
+                        extracted_data.append(f"SECTION: {title}\nCONTENT:\n{text_content}")
+                    else:
+                        extracted_data.append(f"SECTION: {title}\nCONTENT: [Text not found in markdown]")
+
+                return "\n\n" + "="*30 + "\n\n".join(extracted_data)
+
+            except Exception as e:
+                return f"Error in automated extraction: {str(e)}"
+
+        return rfp_text_extractor_tool
+
 
     def _create_agent(self):
         return Agent(
@@ -64,14 +99,28 @@ class Extractor_agent:
             backstory="Specialist in translating complex RFP text into clear, actionable Arabic requirements.",
             llm=self.llm,
             verbose=True,
-            tools=[self.cut_full_text], 
+            tools=[self.extraction_tool], 
             allow_delegation=False,
         )
     
     def _create_task(self):
         return Task(
-            description=f"""Analyze the following FULL TEXT from selected RFP sections:
-                        Task: Extract all mandatory requirements, percentages, and deadlines in professional Arabic.""",
+            description="""
+            Your only job is to use the 'rfp_text_extractor_tool'. 
+            This tool will automatically fetch the selected sections and their full text for you.
+            You are a super smart Strategic Requirements Analyst. Your task is to dissect the texts (Deconstruction) to extract any commitment, standard, or condition that determines the success or acceptance of the proposal (Proposal).
+            Smart business rules:
+            1. Microscopy: Scan the text paragraph by paragraph, sentence by sentence. Do not ignore the details that come in the context of the transmitted speech, and extract the “essence of the requirement” from them.
+            2. Semantic comprehension: Understand the meaning, not just the words. Any sentence that refers to (necessity, obligation, standard, integrity, compatibility, or schedule) is a “prerequisite” that must be extracted.
+            3. Comprehensiveness: It is not limited to technical aspects. Extract requirements (legal, regulatory, administrative, financial, and operational) with the same accuracy.
+            4. Logical connection: If a standard is mentioned (such as an ISO, building code, or system), consider it an immediate “success condition” and draw the associated implications.             
+            5. Numerical Analysis: Carefully search for any percentages or deadlines associated with the requirement and document them in the designated fields.
+            6. Qualitative Classification: Classify each requirement into one of three categories:
+            - Technical: Everything related to implementation, quality, and specifications.
+            - Administrative: Licenses, team, methodology, and submission process.
+            - Financial: Guarantees, payments, penalties, and financial percentages.
+            NOTE:Formulate the output in professional Arabic.
+            """,
             expected_output="A JSON object containing the list of proposed mandatory requirements in Arabic.",
             output_json=FinalRequirementsOutput,
             output_file=os.path.join(self.output_dir, "contextual_requirements_ar.json"),

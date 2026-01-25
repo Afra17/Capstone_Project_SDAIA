@@ -1,0 +1,88 @@
+{
+  "requirements": [
+    {
+      "requirement_text": "يجب أن تكون معايير تقييم العروض واضحة وموضوعية ومحققة للمصلحة العامة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "معايير تقييم العروض"
+    },
+    {
+      "requirement_text": "يجب على لجنة فحص العروض مراجعة جداول الكميات والأسعار وإجراء التصحيحات الحسابية اللازمة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "تصحيح العروض"
+    },
+    {
+      "requirement_text": "إذا تجاوزت الأخطاء الحسابية في الأسعار أكثر من (10%)، يجوز للجنة فحص العروض استبعاد العرض.",
+      "percentage": "10%",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "تصحيح العروض"
+    },
+    {
+      "requirement_text": "يجب على لجنة فحص العروض الالتزام بمعايير التأهيل ومعايير التقييم وشروط المنافسة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "فحص العروض"
+    },
+    {
+      "requirement_text": "إذا لم تتوافر لدى صاحب العرض الشهادات المطلوبة، يمنح مدة لا تزيد عن (عشرة) أيام عمل لاستكمال تلك الشهادات.",
+      "percentage": "Not Specified",
+      "deadline": "10 أيام عمل",
+      "category": "Administrative",
+      "section_name": "فحص العروض"
+    },
+    {
+      "requirement_text": "يجب على من تم الترسية عليه تقديم ضمان نهائي بنسبة (5 %) من قيمة العقد خلال (خمسة عشر) يوم عمل.",
+      "percentage": "5%",
+      "deadline": "15 يوم عمل",
+      "category": "Financial",
+      "section_name": "الضمان النهائي"
+    },
+    {
+      "requirement_text": "يجب على الجهة الحكومية الاحتفاظ بالضمان النهائي حتى يفي المتعاقد بالتزاماته.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Financial",
+      "section_name": "الضمان النهائي"
+    },
+    {
+      "requirement_text": "لا يجوز البدء في تنفيذ الأعمال المتعاقد عليها قبل توقيع العقد.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "توقيع العقد"
+    },
+    {
+      "requirement_text": "يجب الالتزام بالمعايير الدولية مثل ISO/IEC 27001 وISO/IEC 9001.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "المتطلبات العامة والتقنية"
+    },
+    {
+      "requirement_text": "يجب على المتعاقد تقديم تقارير تفصيلية توثق مراحل تنفيذ المشروع.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "تسليم الوثائق"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "مواصفات الجودة"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "مواصفات السلامة"
+    }
+  ]
+}
