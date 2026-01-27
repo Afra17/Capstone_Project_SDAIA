@@ -41,40 +41,22 @@ class Extractor_agent:
 
 
     def _setup_extraction_tool(self):
-        # سحب المسارات لداخل نطاق الأداة
-        scout_json = self.scout_json_path
         md_file = self.md_path
-
         @tool("rfp_text_extractor_tool")
-        def rfp_text_extractor_tool():
+        def rfp_text_extractor_tool(titles: list):
             """
-            Automatically reads selected sections from the Scout JSON file 
-            and extracts their full content from the Markdown RFP.
+            Extracts full content from the Markdown RFP for a given list of section titles.
+            Input: ['Title 1', 'Title 2', ...]
             """
-            import json
             import re
-            
             try:
-                # 1. قراءة ملف العناوين الذي أنتجه الـ Scout
-                with open(scout_json, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                
-                # استخراج قائمة الأسماء فقط
-                sections = data.get('selected_sections', [])
-                if not sections:
-                    return "No sections found in the scout JSON file."
-
-                # 2. قراءة ملف الماركدوان الأصلي
                 with open(md_file, 'r', encoding='utf-8') as f:
                     content = f.read()
 
                 extracted_data = []
-                for item in sections:
-                    title = item.get('section_name', '')
-                    # تنظيف العنوان للبحث
+                for title in titles:
                     clean_title = title.replace('#', '').strip()
-                    
-                    # باترن مرن للبحث عن النص تحت العنوان
+                    # الباترن للبحث عن النص
                     pattern = rf"(?ms)^#*\s*.*{re.escape(clean_title)}.*?\n(.*?)(?=\n#|\n\d+\s*-\s|\Z)"
                     match = re.search(pattern, content)
                     
@@ -82,15 +64,13 @@ class Extractor_agent:
                         text_content = match.group(1).strip()
                         extracted_data.append(f"SECTION: {title}\nCONTENT:\n{text_content}")
                     else:
-                        extracted_data.append(f"SECTION: {title}\nCONTENT: [Text not found in markdown]")
+                        extracted_data.append(f"SECTION: {title}\nCONTENT: [Text not found]")
 
                 return "\n\n" + "="*30 + "\n\n".join(extracted_data)
-
             except Exception as e:
-                return f"Error in automated extraction: {str(e)}"
+                return f"Error: {str(e)}"
 
         return rfp_text_extractor_tool
-
 
     def _create_agent(self):
         return Agent(
@@ -106,9 +86,7 @@ class Extractor_agent:
     def _create_task(self):
         return Task(
             description="""
-            Your only job is to use the 'rfp_text_extractor_tool'. 
-            This tool will automatically fetch the selected sections and their full text for you.
-            You are a super smart Strategic Requirements Analyst. Your task is to dissect the texts (Deconstruction) to extract any commitment, standard, or condition that determines the success or acceptance of the proposal (Proposal).
+            This tool analyzes the headings that appear in the search results. Your task is to analyze (deconstruct) the text to extract any commitment, criterion, or condition that determines the success or acceptance of the proposal(s).
             Smart business rules:
             1. Microscopy: Scan the text paragraph by paragraph, sentence by sentence. Do not ignore the details that come in the context of the transmitted speech, and extract the “essence of the requirement” from them.
             2. Semantic comprehension: Understand the meaning, not just the words. Any sentence that refers to (necessity, obligation, standard, integrity, compatibility, or schedule) is a “prerequisite” that must be extracted.
@@ -126,6 +104,14 @@ class Extractor_agent:
             output_file=os.path.join(self.output_dir, "contextual_requirements_ar.json"),
             agent=self.agent
         )
+
+
+    
+    def set_context_dependency(self, dependency_task):
+        """Set context dependency for the task"""
+        self.task.context = [dependency_task]
+        return self
+    
 
     @property
     def get_agent(self):

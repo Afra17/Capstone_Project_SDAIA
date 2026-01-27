@@ -6,3 +6,7 @@ numpy
 groq
 pandas
 markitdown
+fastapi
+uvicorn
+python-dotenv
+supabase
