@@ -1,92 +1,49 @@
 {
   "selected_sections": [
     {
-      "section_name": "## 4 - المواعيد المتعلقة بالمنافسة",
-      "relevance_score": 60
-    },
-    {
-      "section_name": "## 5 - أهلية مقدمي العروض",
-      "relevance_score": 70
-    },
-    {
-      "section_name": "## 6 - السجلات والتراخيص النظامية",
-      "relevance_score": 65
-    },
-    {
-      "section_name": "## 19 - الاستبعاد من المنافسة",
-      "relevance_score": 75
-    },
-    {
-      "section_name": "## 20 - إلغاء المنافسة وأثره",
-      "relevance_score": 80
-    },
-    {
-      "section_name": "## 21- التفاوض مع أصحاب العروض",
-      "relevance_score": 70
-    },
-    {
-      "section_name": "## 22 - التعاقد من الباطن",
-      "relevance_score": 75
-    },
-    {
-      "section_name": "## 49 - سرية تقييم العروض",
-      "relevance_score": 65
-    },
-    {
-      "section_name": "## 50 - معايير تقييم العروض",
-      "relevance_score": 80
-    },
-    {
-      "section_name": "## 51 - تصحيح العروض",
-      "relevance_score": 70
-    },
-    {
-      "section_name": "## 52 - فحص العروض",
-      "relevance_score": 75
-    },
-    {
-      "section_name": "## 53- الإعلان عن نتائج المنافسة",
-      "relevance_score": 65
-    },
-    {
-      "section_name": "## 55 - إخطار الترسية",
-      "relevance_score": 60
-    },
-    {
-      "section_name": "## 56 - الضمان النهائي",
-      "relevance_score": 70
-    },
-    {
-      "section_name": "## 57 - توقيع العقد",
-      "relevance_score": 65
-    },
-    {
-      "section_name": "## 59 - غرامات التأخير",
-      "relevance_score": 70
-    },
-    {
-      "section_name": "## 60 - غرامات مخالفة أحكام لائحة تفضيل المحتوى المحلي",
-      "relevance_score": 65
+      "section_name": "## 62 - التأمين",
+      "relevance_score": 80,
+      "reasoning": "This section outlines the insurance requirements that the contractor must adhere to, which is critical for risk management and compliance."
     },
     {
       "section_name": "## 63 - نطاق عمل المشروع",
-      "relevance_score": 80
+      "relevance_score": 90,
+      "reasoning": "This section defines the project's scope, detailing the objectives and deliverables, which are essential for evaluating the proposal's alignment with project goals."
     },
     {
       "section_name": "## 66 - جدول الكميات والأسعار",
-      "relevance_score": 75
+      "relevance_score": 85,
+      "reasoning": "This section provides a detailed breakdown of quantities and pricing, which is crucial for financial evaluation and ensuring cost-effectiveness."
     },
     {
       "section_name": "## 71 - مواصفات الجودة:",
-      "relevance_score": 70
+      "relevance_score": 75,
+      "reasoning": "This section specifies the quality standards required for project execution, which is vital for ensuring the deliverables meet the expected standards."
     },
     {
       "section_name": "## 72 - مواصفات السلامة",
-      "relevance_score": 65
+      "relevance_score": 75,
+      "reasoning": "This section outlines safety and health regulations that must be followed during project execution, which is important for compliance and risk management."
     },
     {
       "section_name": "## 73 - القائمة الإلزامية",
-      "relevance_score": 80
+      "relevance_score": 80,
+      "reasoning": "This section mandates compliance with a list of required products and services, which is essential for ensuring adherence to local content regulations."
+    },
+    {
+      "section_name": "## 50 - معايير تقييم العروض",
+      "relevance_score": 90,
+      "reasoning": "This section outlines the criteria for evaluating proposals, which is critical for understanding how bids will be assessed."
+    },
+    {
+      "section_name": "## 51 - تصحيح العروض",
+      "relevance_score": 70,
+      "reasoning": "This section describes the process for correcting errors in proposals, which is important for ensuring fairness in the evaluation process."
+    },
+    {
+      "section_name": "## 52 - فحص العروض",
+      "relevance_score": 85,
+      "reasoning": "This section details the examination process for proposals, which is crucial for ensuring compliance with submission requirements."
     }
   ]
 }

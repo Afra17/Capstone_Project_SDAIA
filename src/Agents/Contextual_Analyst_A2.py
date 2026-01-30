@@ -23,16 +23,17 @@ class MandatoryRequirement(BaseModel):
     deadline: str = Field("Not Specified", description="Date or deadline associated with this requirement")
     category: str = Field(..., description="Requirement classification: (Technical, Administrative, Financial)")    
     section_name: str =Field(..., description="section name of the requerment")
+    #is_evaluable: bool =Field(...,description="Boolean flag: 'true' for scorable Scope of Work/Technical tasks; 'false' for mute-able administrative/legal formalities.")
 class FinalRequirementsOutput(BaseModel):
     requirements: List[MandatoryRequirement]
 
 
 
 class Extractor_agent:
-    def __init__(self, llm, md_path, scout_json_path, output_dir="./output"):
+    def __init__(self, llm, md_path,output_dir="./output"):
         self.llm = llm
         self.md_path = md_path
-        self.scout_json_path = scout_json_path
+        #self.scout_json_path = scout_json_path
         self.output_dir = output_dir
         self.extraction_tool = self._setup_extraction_tool()
 ##-----------------------------------------------
@@ -85,20 +86,21 @@ class Extractor_agent:
     
     def _create_task(self):
         return Task(
-            description="""
-            This tool analyzes the headings that appear in the search results. Your task is to analyze (deconstruct) the text to extract any commitment, criterion, or condition that determines the success or acceptance of the proposal(s).
-            Smart business rules:
-            1. Microscopy: Scan the text paragraph by paragraph, sentence by sentence. Do not ignore the details that come in the context of the transmitted speech, and extract the “essence of the requirement” from them.
-            2. Semantic comprehension: Understand the meaning, not just the words. Any sentence that refers to (necessity, obligation, standard, integrity, compatibility, or schedule) is a “prerequisite” that must be extracted.
-            3. Comprehensiveness: It is not limited to technical aspects. Extract requirements (legal, regulatory, administrative, financial, and operational) with the same accuracy.
-            4. Logical connection: If a standard is mentioned (such as an ISO, building code, or system), consider it an immediate “success condition” and draw the associated implications.             
-            5. Numerical Analysis: Carefully search for any percentages or deadlines associated with the requirement and document them in the designated fields.
-            6. Qualitative Classification: Classify each requirement into one of three categories:
-            - Technical: Everything related to implementation, quality, and specifications.
+           description="""
+            You are a 'Deep-Text Miner' and Technical Requirements Architect. 
+            MISSION: Your task is to perform an 'Atomic Extraction' of the RFP content. You must break down the text into the smallest possible actionable units.
+            CRITICAL RULES:
+            1. ZERO SUMMARIZATION: Never combine two tasks into one requirement. If a sentence contains the word 'and' (e.g., 'design and implement'), you MUST create TWO separate entries.
+            2. Microscopy: Scan the text paragraph by paragraph, sentence by sentence. Do not ignore the details that come in the context of the transmitted speech, and extract the “essence of the requirement” from them.
+            3. Semantic comprehension: Understand the meaning, not just the words. Any sentence that refers to (necessity, obligation, standard, integrity, compatibility, or schedule) is a “prerequisite” that must be extracted.
+            DETAILED INSTRUCTIONS:
+            - Step 1 [Microscopy]: Scan paragraph by paragraph.
+            - Step 2 [Semantic Precision]: Any reference to standards (ISO, NCA, SAMA), integrity, compatibility, or specific certifications is a CRITICAL technical requirement.
+            - Step 3 [Numerical Extraction]: Capture every number, percentage (%), and deadline (days, weeks, months) with extreme precision. 
+            - Step 4 [Categorization]:
+            -Technical: Everything related to implementation, quality, and specifications.
             - Administrative: Licenses, team, methodology, and submission process.
-            - Financial: Guarantees, payments, penalties, and financial percentages.
-            NOTE:Formulate the output in professional Arabic.
-            """,
+            - Financial: Guarantees, payments, penalties, and financial percentages.""",
             expected_output="A JSON object containing the list of proposed mandatory requirements in Arabic.",
             output_json=FinalRequirementsOutput,
             output_file=os.path.join(self.output_dir, "contextual_requirements_ar.json"),

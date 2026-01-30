@@ -4,7 +4,6 @@ Input: Table of Contents (TOC) with smart contextual previews of each section.
 Task: Evaluates and scores sections to identify those containing critical requirements or evaluation criteria.
 Output: A filtered JSON list of high-priority section titles for further analysis.
 """
-
 from crewai import Agent, Task
 from pydantic import BaseModel, Field
 from typing import List
@@ -12,8 +11,6 @@ from crewai.tools import tool
 from pydantic import BaseModel, Field
 import os
 from dotenv import load_dotenv
-import re
-
 load_dotenv()
 
 
@@ -21,7 +18,7 @@ load_dotenv()
 class SelectedSection(BaseModel):
     section_name: str = Field(..., description="The exact text of the heading")
     relevance_score: int = Field(..., description="Importance level from 0-100")
-    
+    reasoning: str = Field(..., description="Why is this section important for evaluation?") 
 class ScoutOutput(BaseModel):
     selected_sections: List[SelectedSection]
 
@@ -93,10 +90,13 @@ class selected_agent:
         return Agent(
             role="RFP Strategic Scout",
             goal="Identify critical sections for proposal evaluation using titles and previews.",
-            backstory="""""You are an expert Proposal Manager for government tenders (Etimad).
-                "Your job is to filter the Table of Contents. 
-                "You know that sections like 'Introduction' or 'Definitions' are informational and irrelevant for evaluation. 
-                "However, sections like 'Scope of Work', 'Technical Specifications', 'General Provisions', 'Submission Method', and 'Evaluation Criteria' are critical.""",
+            backstory="""You are a Senior RFP Strategist with deep expertise in Government & Corporate Tenders. 
+                Your core skill is 'Structural Decomposition' of procurement documents. 
+                You distinguish between two types of content:
+                1. **The Administrative Shell:** (Definitions, Legal Boilerplate, General Provisions) which are mandatory but don't differentiate one bidder from another.
+                2. **The Execution Core:** (Scope, Methodology, Technical Obligations, KPIs) which are the 'Value Drivers' where the actual evaluation and scoring happen.
+                Your mindset is to seek out 'Obligation-Heavy' sections. If a section dictates the 'Lifecycle' of the project—defining what must be built, managed, or provided—it 
+                is your highest priority. You ignore the 'Static' and hunt for the 'Dynamic'.""",
             llm=self.llm,
             verbose=True,
             tools=[self.preview_tool ],
@@ -105,12 +105,14 @@ class selected_agent:
     
     def _create_task(self):
         return Task(
-            description=f"""Analyze the following RFP sections and their previews
-            YOUR MISSION:
-            1. Identify headings that imply a **mandatory requirement**, **evaluation criteria**, or **submission instruction**.
-            2. Ignore general informational headings
-            3. Select sections with score >= 60.
-            Be strict but don't miss technical/legal content.""",
+            description=f"""Analyze the Table of Contents and the contextual previews provided. 
+            Your mission is to select headings that represent the 'Actionable Core' of this RFP.
+            **Use these Strategic Evaluation Rules:**
+            1. **The Performance Rule:** Does this section describe a task, a deliverable, or a standard that the vendor must meet or exceed? (Select it).
+            2. **The Scoring Rule:** Does this section contain criteria or methodologies that will be used to grade the technical proposal? (Select it).
+            3. **The Resource Rule:** Does it specify required expertise, manpower, or specialized equipment? (Select it).
+            4. **The Noise Rule:** If the section is purely informational (Introduction, About us) or purely legal (Dispute Resolution, Termination), 
+            give it a low score (<40) and ignore it.""",
             expected_output="A JSON object containing the list of selected sections that are relevant for proposal evaluation",
             output_json=ScoutOutput,
             output_file=os.path.join(self.output_dir, "selected_sections.json"),

@@ -1,151 +1,179 @@
 {
   "requirements": [
     {
-      "requirement_text": "يجب الالتزام بكافة المواعيد المتعلقة بالمنافسة حسب الجدول المحدد، وفي حال تعطل البوابة لأسباب تقنية لمدة لا تزيد على ثلاثة أيام، يتم تمديد مدة تنفيذ الإجراءات.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 4 - المواعيد المتعلقة بالمنافسة"
-    },
-    {
-      "requirement_text": "لا يجوز المشاركة في المنافسة للأشخاص الذين يشغلون وظائف حكومية أو الذين تم منعهم بموجب حكم قضائي.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 5 - أهلية مقدمي العروض"
-    },
-    {
-      "requirement_text": "يجب أن تتوفر لدى المتنافسين الوثائق التالية: السجل التجاري، تصنيف المقاولين، شهادة الزكاة، شهادة الضريبة، التأمينات الاجتماعية، شهادة اشتراك الغرفة التجارية، وشهادة السعودة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 6 - السجلات والتراخيص النظامية"
-    },
-    {
-      "requirement_text": "يحق للجهة استبعاد أي عرض اجتاز التقييم الفني إذا كانت أسعاره أقل بنسبة 25% عن التكلفة التقديرية.",
-      "percentage": "25%",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 19 - الاستبعاد من المنافسة"
-    },
-    {
-      "requirement_text": "للجهة الحق في إلغاء المنافسة قبل الترسية في حال وجود أخطاء جوهرية في وثائق المنافسة أو مخالفة الإجراءات لأحكام النظام.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 20 - إلغاء المنافسة وأثره"
-    },
-    {
-      "requirement_text": "يحق للجهة التفاوض مع أصحاب العروض في حال ارتفاع الأسعار عن الأسعار السائدة في السوق.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 21- التفاوض مع أصحاب العروض"
-    },
-    {
-      "requirement_text": "يجب تقديم قائمة بأسماء المتعاقدين من الباطن لاعتمادهم من قبل الجهة الحكومية، ولا يجوز أن تزيد نسبة الأعمال المسندة إلى المتعاقد من الباطن على 30%.",
-      "percentage": "30%",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 22 - التعاقد من الباطن"
-    },
-    {
-      "requirement_text": "تلتزم الجهة الحكومية بعدم إفشاء أي بيانات تتعلق بتقييم العروض المستلمة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 49 - سرية تقييم العروض"
-    },
-    {
-      "requirement_text": "يجب أن تكون معايير تقييم العروض واضحة وموضوعية ومحققة للمصلحة العامة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 50 - معايير تقييم العروض"
-    },
-    {
-      "requirement_text": "يجب مراجعة جداول الكميات والأسعار وإجراء التصحيحات الحسابية اللازمة في العرض.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 51 - تصحيح العروض"
-    },
-    {
-      "requirement_text": "تلتزم لجنة فحص العروض بمعايير التأهيل ومعايير التقييم وشروط المنافسة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 52 - فحص العروض"
-    },
-    {
-      "requirement_text": "يجب على الجهة الحكومية الإعلان عن العرض الفائز في المنافسة وإبلاغ صاحبه بذلك.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 53- الإعلان عن نتائج المنافسة"
-    },
-    {
-      "requirement_text": "يجب تقديم ضمان نهائي بنسبة 5% من قيمة العقد خلال 15 يوم عمل من تاريخ إبلاغه بالترسية.",
-      "percentage": "5%",
-      "deadline": "15 يوم عمل",
-      "category": "Financial",
-      "section_name": "## 56 - الضمان النهائي"
-    },
-    {
-      "requirement_text": "لا يجوز البدء في تنفيذ الأعمال المتعاقد عليها قبل توقيع العقد.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 57 - توقيع العقد"
-    },
-    {
-      "requirement_text": "تفرض غرامة تأخير لا تتجاوز 20% من القيمة الإجمالية للعقد في حال تقصير المتعاقد.",
-      "percentage": "20%",
-      "deadline": "Not Specified",
-      "category": "Financial",
-      "section_name": "## 59 - غرامات التأخير"
-    },
-    {
-      "requirement_text": "عند عدم الالتزام بإعطاء الأفضلية للمنتجات الوطنية، سيتم إيقاع غرامة مالية مقدارها 30% من قيمة المشتريات محل التقصير.",
-      "percentage": "30%",
-      "deadline": "Not Specified",
-      "category": "Financial",
-      "section_name": "## 60 - غرامات مخالفة أحكام لائحة تفضيل المحتوى المحلي"
-    },
-    {
-      "requirement_text": "يجب الالتزام بالمعايير الدولية مثل ISO/IEC 27001 وISO/IEC 9001.",
+      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير الأمن السيبراني (ISO/IEC 27001).",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
       "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "يجب تقديم تقارير تفصيلية توثق مراحل تنفيذ المشروع، بما في ذلك التحليل الفني والتصميم والتطوير.",
+      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير إدارة الجودة (ISO/IEC 9001).",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "requirement_text": "توفير وصول ذاتي لجميع أصحاب المصلحة إلى تقارير ومعلومات محدثة باستمرار.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع"
+    },
+    {
+      "requirement_text": "الالتزام بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
       "section_name": "## 71 - مواصفات الجودة:"
     },
     {
-      "requirement_text": "يلتزم المتعاقد بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
+      "requirement_text": "إخطار الجهة الحكومية بما يتسبب أو قد يتسبب في عدم امتثال لمتطلبات الجودة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 71 - مواصفات الجودة:"
+    },
+    {
+      "requirement_text": "الالتزام بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
       "section_name": "## 72 - مواصفات السلامة"
     },
     {
-      "requirement_text": "يجب الالتزام بالقائمة الإلزامية عند توريد الأصناف والمواد أو تنفيذ الأعمال.",
+      "requirement_text": "الالتزام بالقائمة الإلزامية عند توريد الأصناف والمواد أو المشتريات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 73 - القائمة الإلزامية"
+    },
+    {
+      "requirement_text": "مراقبة أداء المتعاقد في تنفيذ التزاماته بشأن القائمة الإلزامية.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 73 - القائمة الإلزامية"
+    },
+    {
+      "requirement_text": "تقديم تقارير تفصيلية توثق مراحل تنفيذ المشروع.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "تسليم الكود المصدري كاملًا من خلال نظام إدارة الإصدارات المعتمد.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "تقديم دعم فني مستمر لمدة 12 شهر بعد النشر.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "إجراء اختبارات وظيفية، أداء وأمان في بيئة تجريبية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "تقديم وثيقة مراجعة أمنية توضح موقع تخزين ومعالجة البيانات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "الالتزام بكافة الأنظمة واللوائح المحلية والدولية ذات العلاقة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 72 - مواصفات السلامة"
+    },
+    {
+      "requirement_text": "تقديم شهادة امتثال موقعة من مزودي الخدمات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "تقديم ملاحظات لمراجعة الأداء وإجراء التعديلات اللازمة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "تقديم تقارير دورية حول أداء المبادرات والمؤشرات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "تقديم دليل المستخدم المفصل.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 66 - جدول الكميات والأسعار"
+    },
+    {
+      "requirement_text": "تسليم المنتجات المدرجة في القائمة الإلزامية وفقًا للتعليمات الصادرة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
       "section_name": "## 73 - القائمة الإلزامية"
+    },
+    {
+      "requirement_text": "تقديم عرض يتضمن الالتزام بالقائمة الإلزامية.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 73 - القائمة الإلزامية"
+    },
+    {
+      "requirement_text": "تقديم عرض يتضمن الالتزام بمعايير تقييم العروض.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 50 - معايير تقييم العروض"
+    },
+    {
+      "requirement_text": "مراجعة جداول الكميات والأسعار الواردة في العرض.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 51 - تصحيح العروض"
+    },
+    {
+      "requirement_text": "إجراء التصحيحات الحسابية اللازمة في العرض.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 51 - تصحيح العروض"
+    },
+    {
+      "requirement_text": "استبعاد العرض إذا تجاوزت الأخطاء الحسابية في الأسعار أكثر من 10%.",
+      "percentage": "10%",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 51 - تصحيح العروض"
+    },
+    {
+      "requirement_text": "تقييم مصادر البيانات وتحديد آليات التكامل.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار"
     }
   ]
 }
