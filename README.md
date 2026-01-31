@@ -1,11 +1,8 @@
-<h1 align="right"><bdi dir="rtl">فَــزْعَــة</bdi> <span dir="ltr">(Fazaa)</span></h1>
+# فَــزْعَــة (Fazaa)  
+### Automated RFP–Proposal Comparison System
 
-## Automated RFP–Proposal Comparison System
 
----
-
-## Team Members:
-
+**Team Members:**  
 - Afra Aloufi  
 - Amnah Albrahim  
 - Luluh Almogbil  
@@ -14,7 +11,7 @@
 
 ## Project Overview
 
-<bdi dir="rtl">فَــزْعَــة</bdi> is an AI-powered assistant designed to simplify how government entities evaluate vendor proposals.
+**فَــزْعَــة** is an AI-powered assistant designed to simplify how government entities evaluate vendor proposals.
 
 RFP reviews are usually manual, slow, and inconsistent. Our system helps teams extract requirements, compare submissions, and score vendors automatically — enabling faster and more objective decisions.
 
@@ -34,7 +31,7 @@ Evaluating multiple long proposals against complex RFPs leads to:
 
 ## Proposed Solution
 
-<bdi dir="rtl">فَــزْعَــة</bdi> uses a multi-agent AI system to:
+فَــزْعَــة uses a multi-agent AI system to:
 
 - Extract RFP requirements  
 - Understand vendor responses  
@@ -44,7 +41,7 @@ Evaluating multiple long proposals against complex RFPs leads to:
 
 ---
 
-## Phase 1 — Data Collection
+##  Phase 1 — Data Collection
 
 To build and test the first version of the system:
 
@@ -54,13 +51,13 @@ To build and test the first version of the system:
 
 ---
 
-## High-Level Flow
+##  High-Level Flow
 
 Upload RFP → Upload Proposals → Extract → Compare → Score → Rank.
 
 ---
 
-## Multi-Agent Setup
+##  Multi-Agent Setup
 
 | Agent | Role | Responsible |
 |------|------|-----------|
@@ -69,5 +66,8 @@ Upload RFP → Upload Proposals → Extract → Compare → Score → Rank.
 | Agent 3 | Extracts and structures proposal responses | Amnah Albrahim |
 | Agent 4 *(Current)* | Core evaluation engine (technical & financial sub-agents) | Luluh Almogbil |
 | Agent 5 *(Planned)* | Final ranking & reasoning | To be determined |
+
+---
+
 
 ---
