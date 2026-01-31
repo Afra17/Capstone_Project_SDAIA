@@ -1,0 +1,76 @@
+{
+  "requirements": [
+    {
+      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير الأمن السيبراني (ISO/IEC 27001).",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع",
+      "impact_weight": 5,
+      "reasoning": "هذا المطلب يتطلب خبرة فنية متخصصة في تطبيق معايير الأمن السيبراني، مما يسمح للمنافسين بتقديم مستويات مختلفة من الجودة والخبرة."
+    },
+    {
+      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير إدارة الجودة (ISO/IEC 9001).",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع",
+      "impact_weight": 5,
+      "reasoning": "يتطلب هذا المطلب تقديم منهجيات محددة لإدارة الجودة، مما يتيح للمنافسين التميز في كيفية تطبيقهم لهذه المعايير."
+    },
+    {
+      "requirement_text": "توفير وصول ذاتي لجميع أصحاب المصلحة إلى تقارير ومعلومات محدثة باستمرار.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع",
+      "impact_weight": 4,
+      "reasoning": "هذا المطلب يتطلب تطوير نظام معلومات متقدم، مما يسمح للمنافسين بتقديم حلول مبتكرة ومختلفة."
+    },
+    {
+      "requirement_text": "الالتزام بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 71 - مواصفات الجودة:",
+      "impact_weight": 5,
+      "reasoning": "يتطلب هذا المطلب تقديم معايير جودة محددة، مما يسمح للمنافسين بالتنافس على أساس كيفية تحقيق هذه المعايير."
+    },
+    {
+      "requirement_text": "إجراء اختبارات وظيفية، أداء وأمان في بيئة تجريبية.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار",
+      "impact_weight": 5,
+      "reasoning": "هذا المطلب يتطلب خبرة فنية في إجراء الاختبارات، مما يسمح للمنافسين بتقديم مستويات مختلفة من الجودة في التنفيذ."
+    },
+    {
+      "requirement_text": "تقديم وثيقة مراجعة أمنية توضح موقع تخزين ومعالجة البيانات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار",
+      "impact_weight": 4,
+      "reasoning": "يتطلب هذا المطلب تقديم تفاصيل فنية حول الأمان، مما يسمح للمنافسين بالتنافس على أساس كيفية معالجة البيانات."
+    },
+    {
+      "requirement_text": "تقييم مصادر البيانات وتحديد آليات التكامل.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار",
+      "impact_weight": 4,
+      "reasoning": "هذا المطلب يتطلب خبرة فنية في تحليل البيانات، مما يسمح للمنافسين بتقديم حلول مختلفة للتكامل."
+    },
+    {
+      "requirement_text": "تقديم شهادة امتثال موقعة من مزودي الخدمات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 66 - جدول الكميات والأسعار",
+      "impact_weight": 3,
+      "reasoning": "يتطلب هذا المطلب تقديم دليل على الامتثال، مما يسمح للمنافسين بالتنافس على أساس كيفية تحقيق هذا الامتثال."
+    }
+  ]
+}
