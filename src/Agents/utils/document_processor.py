@@ -6,7 +6,7 @@ from unstructured.cleaners.core import clean_extra_whitespace
 from dotenv import load_dotenv
 import os 
 from openai import OpenAI 
-
+from agentic_doc.parse import parse
 
 
 class DynamicDocumentProcessor:
@@ -24,7 +24,7 @@ class DynamicDocumentProcessor:
             "Text Elements :", "Design & Layout :", "Layout :","Design Elements :","Design Details :", 
             "Text Fields :", "Colour Palette :", "Spatial Relationships :","Dimensions & Placement :",
             "Design & Colour : ","Primary colour:","The use of blue and green", 
-            "bilingual text indicates","national symbolism","Surrounding Outline :"
+            "bilingual text indicates","national symbolism","Surrounding Outline :","Layout & Placement :"
                 
             
     ]
@@ -67,7 +67,7 @@ class DynamicDocumentProcessor:
         print(f"🎯 قواعد التنظيف الخاصة بهذا الملف: {rules}")
         return rules
 
-    def clean_with_unstructured(self, file_path, rules):
+    def clean_document(self, file_path, rules):
         elements = partition_md(filename=file_path)
         cleaned_text = []
         dynamic_hdr_keys = rules.get('excluded_headers', [])
@@ -106,35 +106,34 @@ class DynamicDocumentProcessor:
         return "\n\n".join(cleaned_text)
 
 
-
-if __name__ == "__main__":
-    # 1. تحميل مفتاح API
+def run_full_cleaning_pipeline(pdf_input_path: str):
+    """
+    تأخذ مسار الـ PDF وتعيد مسار ملف الـ Markdown المنظف نهائياً.
+    """
     load_dotenv()
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-    # 2. تحديد المسارات (تأكدي من صحتها في جهازك)
-    # المسار للملف الخام المستخرج من الـ PDF
-    raw_file_path = r"C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\Capstone_Project_SDAIA\src\data\RFP_raw.md"
-    # مجلد الحفظ للملف النظيف
-    output_dir = r"C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\Capstone_Project_SDAIA\src\data\processed"
-
-    # 3. تهيئة المعالج
-    processor = DynamicDocumentProcessor(output_folder=output_dir)
-
-    print("🧠 جاري تحليل المستند لاستخراج القواعد...")
-    with open(raw_file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
     
-    # الحصول على القواعد الديناميكية
-    dynamic_rules = processor.get_cleaning_rules(content, client)
+    # تحديد مجلد المخرجات بناءً على مكان ملف المدخلات
+    base_folder = os.path.join(os.path.dirname(pdf_input_path), "processed")
+    os.makedirs(base_folder, exist_ok=True)
+    
+    raw_md_path = os.path.join(base_folder, "raw_temp.md")
+    final_md_path = os.path.join(base_folder, "RFP_Final_Cleaned.md")
 
-    print("🧹 جاري التنظيف (حذف أوصاف الصور والهيدرز المتكررة)...")
-    final_md_text = processor.clean_with_unstructured(raw_file_path, dynamic_rules)
+    processor = DynamicDocumentProcessor(output_folder=base_folder)
 
-    # 4. حفظ النتيجة النهائية
-    final_output_path = os.path.join(output_dir, "RFP_Final_Cleaned.md")
-    with open(final_output_path, "w", encoding="utf-8") as f:
-        f.write(final_md_text)
+    # 1. التحويل لـ Markdown خام
+    results = parse([pdf_input_path]) 
+    raw_content = results[0].markdown
+    with open(raw_md_path, "w", encoding="utf-8") as f:
+        f.write(raw_content)
 
-    print(f"✅ انتهى التنظيف بنجاح!")
-    print(f"📂 الملف النظيف موجود هنا: {final_output_path}")
+    # 2. استخراج القواعد ذكياً
+    dynamic_rules = processor.get_cleaning_rules(raw_content, client)
+
+    # 3. التنظيف النهائي
+    final_text = processor.clean_document(raw_md_path, dynamic_rules)
+    with open(final_md_path, "w", encoding="utf-8") as f:
+        f.write(final_text)
+
+    return final_md_path
