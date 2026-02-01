@@ -9,7 +9,7 @@ def run_vendor_b_test():
     REQUIREMENTS_JSON = r"D:\Capstone_Project_SDAIA\src\outputs\strategic_refined_requirements.json"
     OUTPUT_DIR = r"D:\Capstone_Project_SDAIA\src\outputs"
 
-    llm = ChatOpenAI(model_name="gpt-4o", temperature=0)
+    llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
 
     print(f"--- Starting Analysis for Vendor b ---")
     

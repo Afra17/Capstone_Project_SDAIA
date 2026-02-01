@@ -31,22 +31,24 @@ class ResponseAnalyst:
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
 
-        # CONFIGURATION FOR ENOUGH DETAIL:
-        # 1. Increased chunk_size to 1500 to keep technical paragraphs intact.
-        # 2. Increased chunk_overlap to 200 to ensure context isn't lost at page breaks.
+       # OVERRIDING DEFAULTS TO PREVENT 429 ERROR
         self.rag_tool = MDXSearchTool(
             mdx=self.md_path,
             config={
                 "llm": {
                     "provider": "openai",
-                    "config": {"model": "gpt-4o", "temperature": 0}
+                    # Swap to mini: It has a much higher TPM limit than gpt-4o
+                    "config": {"model": "gpt-4o-mini", "temperature": 0} 
                 },
                 "embedder": {
                     "provider": "openai",
-                    "config": {
-                        "model": "text-embedding-3-small",
-                        "task_type": "retrieval_document"
-                    }
+                    "config": {"model": "text-embedding-3-small"}
+                },
+                # Precision Chunking: Smaller chunks stay under the 30k limit
+                "chunk_size": 400,      
+                "chunk_overlap": 50,
+                "retriever": {
+                    "k": 8             # High enough for detail, low enough for safety
                 }
             }
         )
@@ -82,7 +84,7 @@ class ResponseAnalyst:
             الضوابط لضمان كفاية التفاصيل:
             1. لا تتوقف عند العثور على كلمة مفتاحية؛ استخرج الفقرة المحيطة بها بالكامل لفهم السياق.
             2. ابحث عن منهجيات العمل (Technical Methodology) التي تصف الخطوات، الأدوات، والمعايير المستخدمة.
-            3. في المتطلبات المالية (القسم 66)، استخرج الجداول أو الأرقام مع شرح البنود التابعة لها.
+            3. في المتطلبات المالية ، استخرج الجداول أو الأرقام مع شرح البنود التابعة لها.
             4. إذا كان الرد بالإنجليزية، استخرجه كما هو في 'evidence_text' وقم بتلخيص المنهجية بالعربية.
             5. هدفك هو جعل 'technical_methodology' غنية بالمعلومات لدرجة أن Agent 4 لا يحتاج للعودة للملف الأصلي.
             """,
