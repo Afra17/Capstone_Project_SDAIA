@@ -1,0 +1,61 @@
+{
+  "vendor_name": "Vendor B",
+  "proposal_evidence": [
+    {
+      "requirement_name": "الالتزام بالمعايير الدولية: تطبيق معايير الأمن السيبراني (ISO/IEC 27001).",
+      "compliance_status": "مطابق",
+      "evidence_text": "يلتزم [Vendor B] بمواءمة الأمن السيبراني مع الضوابط الوطنية ذات العلاقة، وبالخصوص متطلبات الضوابط الأساسية للأمن السيبراني (NCA ECC) من حيث الحوكمة، إدارة الوصول، حماية البيانات، السجلات، وإدارة الثغرات، بما يتناسب مع بيئة الجهة ودرجة التصنيف.",
+      "technical_methodology": "تطبيق ضوابط مثل الإقامة البياناتية داخل المملكة، تكامل IAM + MFA + RBAC، التشفير 256-AES، Logging & Monitoring، واختبارات اختراق دورية.",
+      "extracted_value": "غير محدد"
+    },
+    {
+      "requirement_name": "الالتزام بالمعايير الدولية: تطبيق معايير إدارة الجودة (ISO/IEC 9001).",
+      "compliance_status": "مطابق",
+      "evidence_text": "إدارة الجودة وضمان الامتثال تشمل مراجعات متطلبات / تصميم / أمن في نقاط حوكمة محددة، اختبارات متعددة المستويات مع Traceability، وقياسات جودة بيانات دورية.",
+      "technical_methodology": "إدارة تغييرات محكومة (Change Control) تمنع الانحراف غير المعتمد، ومعيار قبول يتضمن تقرير جودة شامل قبل Go-Live.",
+      "extracted_value": "غير محدد"
+    },
+    {
+      "requirement_name": "توفير وصول ذاتي لجميع أصحاب المصلحة إلى تقارير ومعلومات محدثة باستمرار.",
+      "compliance_status": "مطابق",
+      "evidence_text": "واجهة ويب داخلية آمنة: لوحات تفاعلية + صفحات مبادرة + KPI / مركز تقارير + واجهة محادثة.",
+      "technical_methodology": "محرك تقارير: قوالب PDF دورية + تقارير حسب الطلب، وتصميم متجاوب + WCAG + اختبار قابلية استخدام.",
+      "extracted_value": "غير محدد"
+    },
+    {
+      "requirement_name": "الالتزام بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "compliance_status": "مطابق",
+      "evidence_text": "إدارة الجودة وضمان الامتثال تشمل مراجعات متطلبات / تصميم / أمن في نقاط حوكمة محددة، اختبارات متعددة المستويات مع Traceability، وقياسات جودة بيانات دورية.",
+      "technical_methodology": "إدارة تغييرات محكومة (Change Control) تمنع الانحراف غير المعتمد، ومعيار قبول يتضمن تقرير جودة شامل قبل Go-Live.",
+      "extracted_value": "غير محدد"
+    },
+    {
+      "requirement_name": "إجراء اختبارات وظيفية، أداء وأمان في بيئة تجريبية.",
+      "compliance_status": "مطابق",
+      "evidence_text": "الاختبارات وضمان الجودة تشمل Unit/Integration/System tests، Performance tests، وSecurity testing + اختبارات اختراق دورية.",
+      "technical_methodology": "إجراء Pilot + UAT مع المستخدمين الرئيسيين، وإغلاق الملاحظات وإعادة الاختبار.",
+      "extracted_value": "غير محدد"
+    },
+    {
+      "requirement_name": "تقديم وثيقة مراجعة أمنية توضح موقع تخزين ومعالجة البيانات.",
+      "compliance_status": "مطابق",
+      "evidence_text": "الإقامة البياناتية داخل المملكة: خيارات استضافة داخلية / سحابة ضمن المملكة، وتوثيق موقع المعالجة.",
+      "technical_methodology": "تقرير إقامة بيانات موقع قبل Go-Live.",
+      "extracted_value": "غير محدد"
+    },
+    {
+      "requirement_name": "تقييم مصادر البيانات وتحديد آليات التكامل.",
+      "compliance_status": "مطابق",
+      "evidence_text": "طبقة جمع البيانات تشمل Connectors/Adapters لكل نظام مصدر، وLanding Zone لاستقبال الملفات.",
+      "technical_methodology": "Orchestration/Scheduling لإدارة الجداول الزمنية والاعتمادية بين المهام، وValidation Engine للتحقق من جودة البيانات.",
+      "extracted_value": "غير محدد"
+    },
+    {
+      "requirement_name": "تقديم شهادة امتثال موقعة من مزودي الخدمات.",
+      "compliance_status": "مطابق",
+      "evidence_text": "الامتثال الأمني والحوكمة وضمان بقاء البيانات داخل المملكة.",
+      "technical_methodology": "حوكمة وأمن شاملان للتخزين والنقل والوصول والتشغيل ضمن النطاق الجغرافي المصرح.",
+      "extracted_value": "غير محدد"
+    }
+  ]
+}
