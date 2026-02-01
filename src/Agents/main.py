@@ -1,7 +1,7 @@
 import os
 from crewai import Crew, Process
 from langchain_openai import ChatOpenAI
-from Response_analyst_A3 import ResponseAnalyst
+from Response_analyst_A4 import ResponseAnalyst
 
 def run_vendor_b_test():
     # --- Paths ---

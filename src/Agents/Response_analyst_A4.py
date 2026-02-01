@@ -31,24 +31,27 @@ class ResponseAnalyst:
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
 
-       # OVERRIDING DEFAULTS TO PREVENT 429 ERROR
+        # VECTORIZATION & RAG CONFIGURATION
+        # The MDXSearchTool automates the mathematical process of turning text into numbers (Vectors).
         self.rag_tool = MDXSearchTool(
             mdx=self.md_path,
             config={
                 "llm": {
                     "provider": "openai",
-                    # Swap to mini: It has a much higher TPM limit than gpt-4o
                     "config": {"model": "gpt-4o-mini", "temperature": 0} 
                 },
                 "embedder": {
                     "provider": "openai",
+                    # This model performs the Vectorization: converting text segments into 1536-dimensional vectors.
                     "config": {"model": "text-embedding-3-small"}
                 },
-                # Precision Chunking: Smaller chunks stay under the 30k limit
+                # Precision Chunking: Text is split into 400-character pieces for vector indexing.
                 "chunk_size": 400,      
                 "chunk_overlap": 50,
                 "retriever": {
-                    "k": 8             # High enough for detail, low enough for safety
+                    # Similarity Search: When searching, the tool calculates Cosine Similarity between 
+                    # the query and the text chunks, returning the 'k' most relevant matches.
+                    "k": 8             
                 }
             }
         )
@@ -57,6 +60,7 @@ class ResponseAnalyst:
         self.task = self._create_task()
 
     def _create_agent(self):
+        """Initializes the Agent with the RAG tool for deep semantic searching."""
         return Agent(
             role="محلل استجابة الموردين (High-Detail RAG Analyst)",
             goal="البحث العميق داخل عروض الموردين لاستخراج تفاصيل فنية ومالية شاملة.",
@@ -70,11 +74,13 @@ class ResponseAnalyst:
         )
     
     def _create_task(self):
-        # Load the strategic refined requirements
+        """Defines the specific extraction task using the refined requirements as the search query."""
+        # 1. Load the requirements extracted by Agent 3
         target_reqs = "No requirements provided."
         if os.path.exists(self.requirements_path):
             with open(self.requirements_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
+                # These requirements will be converted into vectors to query the proposal via Similarity Search.
                 target_reqs = json.dumps(data.get('requirements', []), ensure_ascii=False)
 
         return Task(
@@ -84,12 +90,13 @@ class ResponseAnalyst:
             الضوابط لضمان كفاية التفاصيل:
             1. لا تتوقف عند العثور على كلمة مفتاحية؛ استخرج الفقرة المحيطة بها بالكامل لفهم السياق.
             2. ابحث عن منهجيات العمل (Technical Methodology) التي تصف الخطوات، الأدوات، والمعايير المستخدمة.
-            3. في المتطلبات المالية ، استخرج الجداول أو الأرقام مع شرح البنود التابعة لها.
+            3. في المتطلبات المالية ، استخرج الجداول أو الأرق مع شرح البنود التابعة لها.
             4. إذا كان الرد بالإنجليزية، استخرجه كما هو في 'evidence_text' وقم بتلخيص المنهجية بالعربية.
             5. هدفك هو جعل 'technical_methodology' غنية بالمعلومات لدرجة أن Agent 4 لا يحتاج للعودة للملف الأصلي.
             """,
             expected_output="تقرير JSON غني بالتفاصيل التقنية والمالية المقتبسة والمحللة.",
             output_json=VendorExtractionReport,
+            # Dynamically names the evidence file based on the vendor proposal name
             output_file=os.path.join(self.output_dir, f"evidence_{os.path.basename(self.md_path)}.json"),
             agent=self.agent
         )

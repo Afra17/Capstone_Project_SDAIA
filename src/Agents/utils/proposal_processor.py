@@ -1,72 +1,75 @@
-import fitz  # PyMuPDF
-import re
 import os
+import uuid
+from openai import OpenAI
+from dotenv import load_dotenv
+from agentic_doc.parse import parse
 from unstructured.cleaners.core import clean_extra_whitespace
 
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def clean_vendor_text(text: str) -> str:
+def run_pipeline(input_path, output_folder):
     """
-    Standardized cleaning for Vendor proposals.
+    Generalized cleaning pipeline optimized for backend integration.
+    Removes hardcoded paths and uses unique IDs to prevent file overwrites.
     """
-    # 1) Remove noise: remove backslashes "\" (سبب الـ SyntaxError كان هنا)
-    text = text.replace("\\", "")
+    # 1. GENERATE UNIQUE ID: Essential for concurrent backend users
+    job_id = str(uuid.uuid4())[:8]
+    original_name = os.path.basename(input_path).split('.')[0]
+    
+    # 2. CONVERSION: PDF to Raw Markdown
+    print(f"🚀 [Job {job_id}] Starting conversion: {original_name}")
+    results = parse([input_path])
+    raw_content = results[0].markdown
+    
+    # 3. CHUNKED REFINEMENT: Handling long proposals safely
+    # We clean in chunks to avoid the 30,000 token limit that crashed Vendor B
+    print(f"🧹 [Job {job_id}] Refining content in safe chunks...")
+    
+    # Increase this if you want more context, decrease if you hit rate limits
+    chunk_size = 5000 
+    content_chunks = [raw_content[i:i+chunk_size] for i in range(0, len(raw_content), chunk_size)]
+    refined_parts = []
 
-    # 2) Strip Page markers like: --- PAGE 14 ---
-    text = re.sub(r'---\s*PAGE\s*\d+\s*---', '', text)
+    for chunk in content_chunks:
+        refine_prompt = f"""
+        Clean this Markdown segment. Rules:
+        - FIX BROKEN WORDS: (e.g., 'cap- stone' -> 'capstone').
+        - REMOVE LOGOS/FOOTERS: Strip visual descriptions and repetitive headers.
+        - PRESERVE ARABIC: Do not translate or alter technical terms.
+        
+        Text:
+        {chunk}
+        """
 
-    # 3) Standardize bullet points (•, O, o, -) to Markdown '*'
-    text = re.sub(r'^[•Oo-]\s*', '* ', text, flags=re.MULTILINE)
+        response = client.chat.completions.create(
+            model="gpt-4o-mini", # Use mini for cost and high rate limits
+            messages=[{"role": "system", "content": "You are a professional document cleaner."},
+                      {"role": "user", "content": refine_prompt}]
+        )
+        refined_parts.append(response.choices[0].message.content)
 
-    # 4) Map Arabic Sections (القسم ...) to H2 headers
-    text = re.sub(r'(القسم\s+[\u0621-\u064A]+:.*)', r'\n## \1', text)
+    # 4. FINAL POLISH: Combine and clean whitespace
+    full_refined_text = "\n".join(refined_parts)
+    final_text = clean_extra_whitespace(full_refined_text)
 
-    # 5) Map Sub-sections (e.g., 2.1, 3.2) to H3 headers
-    text = re.sub(r'^(\d+\.\d+.*)', r'\n### \1', text, flags=re.MULTILINE)
+    # 5. SAVE WITH UNIQUE NAME: Prevents overwriting Vendor A with Vendor B
+    final_filename = f"{original_name}_{job_id}_cleaned.md"
+    final_md_path = os.path.join(output_folder, final_filename)
+    
+    with open(final_md_path, "w", encoding="utf-8") as f:
+        f.write(final_text)
+    
+    return final_md_path
 
-    # 6) Final white-space optimization for token efficiency
-    text = clean_extra_whitespace(text)
-
-    return text
-
-
-def batch_process_vendors(input_folder: str, output_folder: str) -> None:
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-
-    for filename in os.listdir(input_folder):
-        if filename.lower().endswith(".pdf"):
-            pdf_path = os.path.join(input_folder, filename)
-            md_filename = filename.rsplit(".", 1)[0] + ".md"
-            md_path = os.path.join(output_folder, md_filename)
-
-            print(f"📄 Processing: {filename}...")
-
-            try:
-                # Open PDF
-                doc = fitz.open(pdf_path)
-
-                # Collect text from all pages
-                pages_text = []
-                for page in doc:
-                    pages_text.append(page.get_text())
-
-                doc.close()
-
-                full_text = "\n".join(pages_text)
-
-                # Clean
-                cleaned_md = clean_vendor_text(full_text)
-
-                # Save as markdown
-                with open(md_path, "w", encoding="utf-8") as f:
-                    f.write(cleaned_md)
-
-                print(f"✅ Created: {md_filename}")
-
-            except Exception as e:
-                print(f"❌ Failed to process {filename}: {e}")
-
-
-# --- EXECUTION ---
-# Put all your vendor PDFs in a folder named 'vendors'
-batch_process_vendors(input_folder="vendors", output_folder="cleaned_markdowns")
+if __name__ == "__main__":
+    # Test paths
+    TEST_INPUT = r"D:\Capstone_Project_SDAIA\src\data\raw\Vendor C.pdf"
+    TEST_OUTPUT = r"D:\Capstone_Project_SDAIA\src\data\processed"
+    os.makedirs(TEST_OUTPUT, exist_ok=True)
+    
+    try:
+        path = run_pipeline(TEST_INPUT, TEST_OUTPUT)
+        print(f"✨ Success! Backend-ready file saved at: {path}")
+    except Exception as e:
+        print(f"❌ Error: {e}")
