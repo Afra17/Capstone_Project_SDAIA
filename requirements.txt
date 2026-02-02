@@ -1,13 +1,37 @@
+# Document processing
 pypdf
 pymupdf
+unstructured
+
+# Vector DB & embeddings
 chromadb
-scikit-learn
-numpy
+faiss-cpu
+sentence-transformers
+
+# LangChain ecosystem
+langchain
+langchain-community
+langchain-huggingface
+
+# Agents
+crewai
+pydantic
+
+# LLM providers
+openai
 groq
-pandas
-markitdown
+tiktoken
+
+# Backend / API
 fastapi
 uvicorn
 python-dotenv
 supabase
-unstructured
+
+# Data & ML
+numpy
+pandas
+scikit-learn
+
+# Optional / utility
+markitdown
