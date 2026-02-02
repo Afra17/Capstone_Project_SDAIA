@@ -1,75 +1,167 @@
 import os
-import uuid
-from openai import OpenAI
+import re
 from dotenv import load_dotenv
 from agentic_doc.parse import parse
-from unstructured.cleaners.core import clean_extra_whitespace
 
-load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Load .env explicitly (your file is in D:\Capstone_Project_SDAIA\src\.env)
+load_dotenv(r"D:\Capstone_Project_SDAIA\src\.env", override=True)
 
-def run_pipeline(input_path, output_folder):
+
+def _normalize_vendor_name(input_path: str) -> str:
     """
-    Generalized cleaning pipeline optimized for backend integration.
-    Removes hardcoded paths and uses unique IDs to prevent file overwrites.
+    Convert "Vendor C.pdf" -> "vendor_c"
     """
-    # 1. GENERATE UNIQUE ID: Essential for concurrent backend users
-    job_id = str(uuid.uuid4())[:8]
-    original_name = os.path.basename(input_path).split('.')[0]
-    
-    # 2. CONVERSION: PDF to Raw Markdown
-    print(f"🚀 [Job {job_id}] Starting conversion: {original_name}")
+    name = os.path.splitext(os.path.basename(input_path))[0].strip().lower()
+    name = re.sub(r"\s+", "_", name)
+    name = re.sub(r"[^a-z0-9_]+", "", name)
+    return name or "vendor"
+
+
+def strip_agentic_comments(md: str) -> str:
+    """
+    Remove ONLY metadata comments inserted by agentic_doc:
+    <!-- text, from page ... with ID ... -->
+    """
+    return re.sub(r"<!--.*?-->", "", md, flags=re.DOTALL)
+
+
+def normalize_newlines(md: str) -> str:
+    """
+    Keep newlines, but normalize them safely.
+    - Convert CRLF to LF
+    - Remove trailing spaces per line
+    - Collapse huge blank gaps (but preserve paragraphs)
+    """
+    md = md.replace("\r\n", "\n").replace("\r", "\n")
+    md = "\n".join(line.rstrip() for line in md.split("\n"))
+    md = re.sub(r"\n{5,}", "\n\n\n", md)  # keep structure
+    return md
+
+
+def fix_hyphenation(md: str) -> str:
+    """
+    Fix broken words across line breaks:
+    cap-\nstone -> capstone
+    """
+    return re.sub(r"(\w)-\n(\w)", r"\1\2", md)
+
+
+def ensure_markdown_headings(md: str) -> str:
+    """
+    Make headings appear as real headings with newlines.
+    This is LOSSLESS: it only adds '\n' and '## ' prefixes when safe.
+    """
+
+    # 1) If you have inline headings like "## 23 - ...", ensure new line before them
+    md = re.sub(r"(?<!\n)\s*(#{1,6}\s+)", r"\n\1", md)
+
+    # 2) Promote numbered Arabic section titles to headings if they appear as standalone lines
+    # Examples: "23 - التأهيل اللاحق" or "23- التأهيل اللاحق"
+    md = re.sub(
+        r"(?m)^(?P<num>\d{1,3}\s*[-–]\s*.+?)\s*$",
+        r"## \g<num>",
+        md
+    )
+
+    # 3) Whitelist some common Arabic section titles (standalone lines) -> headings
+    # (You can add more here later)
+    common_headers = [
+        "مقدمة", "نطاق العمل", "الأهداف", "المنهجية", "الجدول الزمني",
+        "خطة العمل", "إدارة المشروع", "الحوكمة", "الأمن السيبراني",
+        "إدارة المخاطر", "ضمان الجودة", "المخرجات", "الافتراضات", "القيود"
+    ]
+    for h in common_headers:
+        md = re.sub(rf"(?m)^{re.escape(h)}\s*$", rf"## {h}", md)
+
+    return md
+
+
+def insert_paragraph_breaks(md: str) -> str:
+    """
+    The key to making it look like your RFP file:
+    Insert line breaks after sentence endings, but do it safely.
+
+    IMPORTANT:
+    - We do NOT delete text.
+    - We only add '\n' after punctuation when there isn't already a newline.
+    """
+
+    # Add newline after Arabic sentence ends: "؟" "。" "!" "."
+    md = re.sub(r"(؟)(?!\n)\s+", r"\1\n", md)
+    md = re.sub(r"([.!])(?!\n)\s+", r"\1\n", md)
+
+    # For Arabic commas/semicolons, insert softer breaks (optional but helps readability)
+    md = re.sub(r"(،)(?!\n)\s+", r"\1\n", md)
+    md = re.sub(r"(؛)(?!\n)\s+", r"\1\n", md)
+
+    # Ensure lists start on a new line if stuck inline:
+    # "1) ..." or "1. ..." or "- ..."
+    md = re.sub(r"(?<!\n)\s(\d+\s*[\)\.])\s+", r"\n\1 ", md)
+    md = re.sub(r"(?<!\n)\s-\s+", r"\n- ", md)
+
+    # Collapse too many consecutive single-line breaks into paragraphs nicely
+    md = re.sub(r"\n{4,}", "\n\n\n", md)
+
+    return md
+
+
+def cleanup_spacing_without_destroying_lines(md: str) -> str:
+    """
+    Normalize spacing BUT preserve newlines.
+    Avoid clean_extra_whitespace() because it tends to squash layout.
+    """
+    # Replace tabs with spaces
+    md = md.replace("\t", " ")
+
+    # Reduce multiple spaces inside lines (not across newlines)
+    md = "\n".join(re.sub(r"[ ]{2,}", " ", line) for line in md.split("\n"))
+
+    # Remove stray spaces before punctuation
+    md = re.sub(r"\s+([،؛:!?.؟])", r"\1", md)
+
+    return md
+
+
+def run_pipeline(input_path: str, output_folder: str) -> str:
+    vendor_slug = _normalize_vendor_name(input_path)
+    final_md_path = os.path.join(output_folder, f"{vendor_slug}_cleaned.md")
+
+    print(f"🚀 Parsing PDF to Markdown: {os.path.basename(input_path)}")
     results = parse([input_path])
-    raw_content = results[0].markdown
-    
-    # 3. CHUNKED REFINEMENT: Handling long proposals safely
-    # We clean in chunks to avoid the 30,000 token limit that crashed Vendor B
-    print(f"🧹 [Job {job_id}] Refining content in safe chunks...")
-    
-    # Increase this if you want more context, decrease if you hit rate limits
-    chunk_size = 5000 
-    content_chunks = [raw_content[i:i+chunk_size] for i in range(0, len(raw_content), chunk_size)]
-    refined_parts = []
 
-    for chunk in content_chunks:
-        refine_prompt = f"""
-        Clean this Markdown segment. Rules:
-        - FIX BROKEN WORDS: (e.g., 'cap- stone' -> 'capstone').
-        - REMOVE LOGOS/FOOTERS: Strip visual descriptions and repetitive headers.
-        - PRESERVE ARABIC: Do not translate or alter technical terms.
-        
-        Text:
-        {chunk}
-        """
+    if not results or not getattr(results[0], "markdown", ""):
+        raise ValueError("Parsed Markdown is empty. Check agentic_doc config or PDF.")
 
-        response = client.chat.completions.create(
-            model="gpt-4o-mini", # Use mini for cost and high rate limits
-            messages=[{"role": "system", "content": "You are a professional document cleaner."},
-                      {"role": "user", "content": refine_prompt}]
-        )
-        refined_parts.append(response.choices[0].message.content)
+    md = results[0].markdown
 
-    # 4. FINAL POLISH: Combine and clean whitespace
-    full_refined_text = "\n".join(refined_parts)
-    final_text = clean_extra_whitespace(full_refined_text)
+    print("Removing agentic_doc comments (<!-- ... -->)")
+    md = strip_agentic_comments(md)
 
-    # 5. SAVE WITH UNIQUE NAME: Prevents overwriting Vendor A with Vendor B
-    final_filename = f"{original_name}_{job_id}_cleaned.md"
-    final_md_path = os.path.join(output_folder, final_filename)
-    
+    print("Normalizing newlines (preserve structure)")
+    md = normalize_newlines(md)
+
+    print("Fixing broken hyphenated words")
+    md = fix_hyphenation(md)
+
+    print("Enforcing headings and section structure")
+    md = ensure_markdown_headings(md)
+
+    print("Inserting paragraph breaks (lossless)")
+    md = insert_paragraph_breaks(md)
+
+    print("Final spacing cleanup (without destroying layout)")
+    md = cleanup_spacing_without_destroying_lines(md)
+
+    # Final guarantee: file ends with newline
+    if not md.endswith("\n"):
+        md += "\n"
+
+    os.makedirs(output_folder, exist_ok=True)
     with open(final_md_path, "w", encoding="utf-8") as f:
-        f.write(final_text)
-    
+        f.write(md)
+
+    print(f"✅ Saved ONE clean file: {final_md_path}")
     return final_md_path
 
-if __name__ == "__main__":
-    # Test paths
-    TEST_INPUT = r"D:\Capstone_Project_SDAIA\src\data\raw\Vendor C.pdf"
-    TEST_OUTPUT = r"D:\Capstone_Project_SDAIA\src\data\processed"
-    os.makedirs(TEST_OUTPUT, exist_ok=True)
-    
-    try:
-        path = run_pipeline(TEST_INPUT, TEST_OUTPUT)
-        print(f"✨ Success! Backend-ready file saved at: {path}")
-    except Exception as e:
-        print(f"❌ Error: {e}")
+
+
