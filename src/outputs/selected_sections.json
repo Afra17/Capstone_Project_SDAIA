@@ -1,49 +1,79 @@
 {
   "selected_sections": [
     {
-      "section_name": "## 62 - التأمين",
+      "section_name": "## 2 - تعريف عن المنافسة",
       "relevance_score": 80,
-      "reasoning": "This section outlines the insurance requirements that the contractor must adhere to, which is critical for risk management and compliance."
+      "reasoning": "Describes the project to develop an AI tool for data collection and analysis, outlining the scope and phases of implementation."
+    },
+    {
+      "section_name": "## 5 - أهلية مقدمي العروض",
+      "relevance_score": 70,
+      "reasoning": "Defines eligibility criteria for bidders, which is crucial for determining who can participate in the competition."
+    },
+    {
+      "section_name": "## 6 - السجلات والتراخيص النظامية",
+      "relevance_score": 60,
+      "reasoning": "Specifies required documentation and licenses for bidders, ensuring compliance with legal requirements."
+    },
+    {
+      "section_name": "## 10 - المساواة والشفافية",
+      "relevance_score": 65,
+      "reasoning": "Outlines the government's commitment to transparency and equal treatment of bidders, which is essential for fair competition."
+    },
+    {
+      "section_name": "## 19 - الاستبعاد من المنافسة",
+      "relevance_score": 75,
+      "reasoning": "Details conditions under which bids may be disqualified, impacting the evaluation process."
+    },
+    {
+      "section_name": "## 21 - التفاوض مع أصحاب العروض",
+      "relevance_score": 70,
+      "reasoning": "Describes the negotiation process for bids exceeding market prices, which is critical for finalizing contracts."
+    },
+    {
+      "section_name": "## 23 - التأهيل اللاحق",
+      "relevance_score": 65,
+      "reasoning": "Explains the post-qualification process for the winning bidder, ensuring they meet ongoing requirements."
+    },
+    {
+      "section_name": "## 50 - معايير تقييم العروض",
+      "relevance_score": 85,
+      "reasoning": "Sets the criteria for evaluating bids, which directly influences the selection of the winning proposal."
+    },
+    {
+      "section_name": "## 51 - تصحيح العروض",
+      "relevance_score": 75,
+      "reasoning": "Details the process for correcting bid discrepancies, which is important for maintaining fairness in evaluation."
+    },
+    {
+      "section_name": "## 52 - فحص العروض",
+      "relevance_score": 80,
+      "reasoning": "Describes the examination of bids against qualification criteria, essential for determining compliance."
     },
     {
       "section_name": "## 63 - نطاق عمل المشروع",
       "relevance_score": 90,
-      "reasoning": "This section defines the project's scope, detailing the objectives and deliverables, which are essential for evaluating the proposal's alignment with project goals."
+      "reasoning": "Defines the project's scope and deliverables, which are critical for understanding the requirements of the proposal."
     },
     {
       "section_name": "## 66 - جدول الكميات والأسعار",
-      "relevance_score": 85,
-      "reasoning": "This section provides a detailed breakdown of quantities and pricing, which is crucial for financial evaluation and ensuring cost-effectiveness."
+      "relevance_score": 70,
+      "reasoning": "Provides a breakdown of quantities and pricing, which is essential for financial evaluation."
     },
     {
-      "section_name": "## 71 - مواصفات الجودة:",
+      "section_name": "## 71 - مواصفات الجودة :",
       "relevance_score": 75,
-      "reasoning": "This section specifies the quality standards required for project execution, which is vital for ensuring the deliverables meet the expected standards."
+      "reasoning": "Specifies quality standards that must be met, which is crucial for project success."
     },
     {
       "section_name": "## 72 - مواصفات السلامة",
       "relevance_score": 75,
-      "reasoning": "This section outlines safety and health regulations that must be followed during project execution, which is important for compliance and risk management."
+      "reasoning": "Outlines safety and health regulations that must be adhered to, ensuring compliance with legal standards."
     },
     {
       "section_name": "## 73 - القائمة الإلزامية",
-      "relevance_score": 80,
-      "reasoning": "This section mandates compliance with a list of required products and services, which is essential for ensuring adherence to local content regulations."
-    },
-    {
-      "section_name": "## 50 - معايير تقييم العروض",
-      "relevance_score": 90,
-      "reasoning": "This section outlines the criteria for evaluating proposals, which is critical for understanding how bids will be assessed."
-    },
-    {
-      "section_name": "## 51 - تصحيح العروض",
       "relevance_score": 70,
-      "reasoning": "This section describes the process for correcting errors in proposals, which is important for ensuring fairness in the evaluation process."
-    },
-    {
-      "section_name": "## 52 - فحص العروض",
-      "relevance_score": 85,
-      "reasoning": "This section details the examination process for proposals, which is crucial for ensuring compliance with submission requirements."
+      "reasoning": "Details mandatory compliance with local content requirements, which is important for project execution."
     }
   ]
 }

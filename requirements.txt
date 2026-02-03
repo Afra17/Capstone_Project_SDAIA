@@ -2,6 +2,7 @@
 pypdf
 pymupdf
 unstructured
+markdown
 
 # Vector DB & embeddings
 chromadb

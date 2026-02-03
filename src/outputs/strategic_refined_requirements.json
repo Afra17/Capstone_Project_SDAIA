@@ -1,76 +1,121 @@
 {
   "requirements": [
     {
-      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير الأمن السيبراني (ISO/IEC 27001).",
+      "requirement_text": "تطوير أداة ذكاء اصطناعي تدمج البيانات من مصادر متعددة لتتبع حالة المبادرات.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع",
+      "section_name": "## 2 - تعريف عن المنافسة",
       "impact_weight": 5,
-      "reasoning": "هذا المطلب يتطلب خبرة فنية متخصصة في تطبيق معايير الأمن السيبراني، مما يسمح للمنافسين بتقديم مستويات مختلفة من الجودة والخبرة."
+      "reasoning": "هذا المتطلب يتطلب خبرة فنية متخصصة في تطوير أدوات الذكاء الاصطناعي، مما يسمح للمنافسين بتقديم مستويات مختلفة من الجودة والابتكار."
     },
     {
-      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير إدارة الجودة (ISO/IEC 9001).",
+      "requirement_text": "تحليل الأداء وإنتاج تقارير ذكية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع",
-      "impact_weight": 5,
-      "reasoning": "يتطلب هذا المطلب تقديم منهجيات محددة لإدارة الجودة، مما يتيح للمنافسين التميز في كيفية تطبيقهم لهذه المعايير."
-    },
-    {
-      "requirement_text": "توفير وصول ذاتي لجميع أصحاب المصلحة إلى تقارير ومعلومات محدثة باستمرار.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع",
+      "section_name": "## 2 - تعريف عن المنافسة",
       "impact_weight": 4,
-      "reasoning": "هذا المطلب يتطلب تطوير نظام معلومات متقدم، مما يسمح للمنافسين بتقديم حلول مبتكرة ومختلفة."
+      "reasoning": "يتطلب هذا المتطلب مهارات تحليلية متقدمة وقدرة على إنتاج تقارير ذات قيمة مضافة، مما يتيح للمنافسين التميز في تقديم حلول مبتكرة."
     },
     {
-      "requirement_text": "الالتزام بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التصميم.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 71 - مواصفات الجودة:",
-      "impact_weight": 5,
-      "reasoning": "يتطلب هذا المطلب تقديم معايير جودة محددة، مما يسمح للمنافسين بالتنافس على أساس كيفية تحقيق هذه المعايير."
-    },
-    {
-      "requirement_text": "إجراء اختبارات وظيفية، أداء وأمان في بيئة تجريبية.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار",
-      "impact_weight": 5,
-      "reasoning": "هذا المطلب يتطلب خبرة فنية في إجراء الاختبارات، مما يسمح للمنافسين بتقديم مستويات مختلفة من الجودة في التنفيذ."
-    },
-    {
-      "requirement_text": "تقديم وثيقة مراجعة أمنية توضح موقع تخزين ومعالجة البيانات.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار",
+      "section_name": "## 2 - تعريف عن المنافسة",
       "impact_weight": 4,
-      "reasoning": "يتطلب هذا المطلب تقديم تفاصيل فنية حول الأمان، مما يسمح للمنافسين بالتنافس على أساس كيفية معالجة البيانات."
+      "reasoning": "هذا المتطلب يتطلب منهجية واضحة في التصميم، مما يسمح للمنافسين بتقديم استراتيجيات مختلفة تؤثر على جودة التنفيذ."
     },
     {
-      "requirement_text": "تقييم مصادر البيانات وتحديد آليات التكامل.",
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التطوير.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار",
+      "section_name": "## 2 - تعريف عن المنافسة",
       "impact_weight": 4,
-      "reasoning": "هذا المطلب يتطلب خبرة فنية في تحليل البيانات، مما يسمح للمنافسين بتقديم حلول مختلفة للتكامل."
+      "reasoning": "يتطلب هذا المتطلب خبرة في تطوير البرمجيات، مما يتيح للمنافسين تقديم حلول فنية مختلفة تؤثر على الأداء النهائي."
     },
     {
-      "requirement_text": "تقديم شهادة امتثال موقعة من مزودي الخدمات.",
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل النشر.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار",
+      "section_name": "## 2 - تعريف عن المنافسة",
+      "impact_weight": 4,
+      "reasoning": "هذا المتطلب يتطلب استراتيجيات نشر فعالة، مما يسمح للمنافسين بتقديم خطط مختلفة تؤثر على نجاح المشروع."
+    },
+    {
+      "requirement_text": "ضمان التكامل مع أنظمة الوزارة الحالية.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 2 - تعريف عن المنافسة",
+      "impact_weight": 5,
+      "reasoning": "يتطلب هذا المتطلب خبرة فنية في التكامل بين الأنظمة، مما يسمح للمنافسين بتقديم حلول مبتكرة تتناسب مع البنية التحتية الحالية."
+    },
+    {
+      "requirement_text": "يجب أن تكون معايير تقييم العروض واضحة وموضوعية.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 50 - معايير تقييم العروض",
       "impact_weight": 3,
-      "reasoning": "يتطلب هذا المطلب تقديم دليل على الامتثال، مما يسمح للمنافسين بالتنافس على أساس كيفية تحقيق هذا الامتثال."
+      "reasoning": "هذا المتطلب يحدد كيفية تقييم العروض، مما يؤثر على المنافسة ويتيح للمنافسين تقديم عروض تتماشى مع المعايير المحددة."
+    },
+    {
+      "requirement_text": "يجب على لجنة فحص العروض مراجعة جداول الكميات والأسعار وإجراء التصحيحات الحسابية اللازمة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 51 - تصحيح العروض",
+      "impact_weight": 3,
+      "reasoning": "هذا المتطلب يتطلب دقة في مراجعة العروض، مما يؤثر على نتائج التقييم ويتيح للمنافسين تقديم عروض دقيقة."
+    },
+    {
+      "requirement_text": "تلتزم لجنة فحص العروض بمعايير التأهيل ومعايير التقييم وشروط المنافسة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 52 - فحص العروض",
+      "impact_weight": 3,
+      "reasoning": "هذا المتطلب يضمن الالتزام بالمعايير، مما يؤثر على نزاهة التقييم ويتيح للمنافسين تقديم عروض تتماشى مع الشروط المحددة."
+    },
+    {
+      "requirement_text": "يهدف المشروع إلى تطوير مساعد ذكي يعتمد على تقنيات الذكاء الاصطناعي.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع",
+      "impact_weight": 5,
+      "reasoning": "هذا المتطلب يتطلب خبرة فنية متخصصة في الذكاء الاصطناعي، مما يسمح للمنافسين بتقديم حلول مبتكرة ومتفوقة."
+    },
+    {
+      "requirement_text": "يجب الالتزام بالمعايير الدولية مثل ISO/IEC 27001 وISO/IEC 9001.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع",
+      "impact_weight": 4,
+      "reasoning": "هذا المتطلب يتطلب التزاماً بمعايير دولية، مما يؤثر على جودة التنفيذ ويتيح للمنافسين تقديم مستويات مختلفة من الالتزام."
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 71 - مواصفات الجودة :",
+      "impact_weight": 5,
+      "reasoning": "هذا المتطلب يتطلب التزاماً بمواصفات جودة محددة، مما يسمح للمنافسين بتقديم مستويات مختلفة من الجودة."
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 72 - مواصفات السلامة",
+      "impact_weight": 4,
+      "reasoning": "هذا المتطلب يتطلب التزاماً بمعايير السلامة، مما يؤثر على جودة التنفيذ ويتيح للمنافسين تقديم حلول تتماشى مع المعايير."
     }
   ]
 }

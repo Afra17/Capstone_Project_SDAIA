@@ -44,7 +44,8 @@ class Extractor_agent:
     def _setup_extraction_tool(self):
         md_file = self.md_path
         @tool("rfp_text_extractor_tool")
-        def rfp_text_extractor_tool(titles: list):
+        def rfp_text_extractor_tool(titles: List[str]) -> str:
+
             """
             Extracts full content from the Markdown RFP for a given list of section titles.
             Input: ['Title 1', 'Title 2', ...]

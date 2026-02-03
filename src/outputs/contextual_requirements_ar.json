@@ -1,179 +1,144 @@
 {
   "requirements": [
     {
-      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير الأمن السيبراني (ISO/IEC 27001).",
+      "requirement_text": "تطوير أداة ذكاء اصطناعي تدمج البيانات من مصادر متعددة لتتبع حالة المبادرات.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع"
+      "section_name": "## 2 - تعريف عن المنافسة"
     },
     {
-      "requirement_text": "الالتزام بالمعايير الدولية: تطبيق معايير إدارة الجودة (ISO/IEC 9001).",
+      "requirement_text": "تحليل الأداء وإنتاج تقارير ذكية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع"
+      "section_name": "## 2 - تعريف عن المنافسة"
     },
     {
-      "requirement_text": "توفير وصول ذاتي لجميع أصحاب المصلحة إلى تقارير ومعلومات محدثة باستمرار.",
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التصميم.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع"
+      "section_name": "## 2 - تعريف عن المنافسة"
     },
     {
-      "requirement_text": "الالتزام بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التطوير.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 71 - مواصفات الجودة:"
+      "section_name": "## 2 - تعريف عن المنافسة"
     },
     {
-      "requirement_text": "إخطار الجهة الحكومية بما يتسبب أو قد يتسبب في عدم امتثال لمتطلبات الجودة.",
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل النشر.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 71 - مواصفات الجودة:"
+      "section_name": "## 2 - تعريف عن المنافسة"
     },
     {
-      "requirement_text": "الالتزام بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
+      "requirement_text": "ضمان التكامل مع أنظمة الوزارة الحالية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 72 - مواصفات السلامة"
+      "section_name": "## 2 - تعريف عن المنافسة"
     },
     {
-      "requirement_text": "الالتزام بالقائمة الإلزامية عند توريد الأصناف والمواد أو المشتريات.",
+      "requirement_text": "لا يجوز المشاركة في المنافسة لموظفي الدولة إلا في حالات محددة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 73 - القائمة الإلزامية"
+      "section_name": "## 5 - أهلية مقدمي العروض"
     },
     {
-      "requirement_text": "مراقبة أداء المتعاقد في تنفيذ التزاماته بشأن القائمة الإلزامية.",
+      "requirement_text": "يجب أن تتوفر لدى المتنافسين الوثائق التالية: السجل التجاري، تصنيف المقاولين، شهادة الزكاة، شهادة الضريبة، التأمينات الاجتماعية، شهادة اشتراك الغرفة التجارية، شهادة السعودة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 73 - القائمة الإلزامية"
+      "section_name": "## 6 - السجلات والتراخيص النظامية"
     },
     {
-      "requirement_text": "تقديم تقارير تفصيلية توثق مراحل تنفيذ المشروع.",
+      "requirement_text": "يجب على الجهة الحكومية اطلاع كافة المتنافسين على المعلومات ذات العلاقة بنطاق العمل.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 66 - جدول الكميات والأسعار"
+      "section_name": "## 10 - المساواة والشفافية"
     },
     {
-      "requirement_text": "تسليم الكود المصدري كاملًا من خلال نظام إدارة الإصدارات المعتمد.",
+      "requirement_text": "يحق للجهة استبعاد أي عرض اجتاز التقييم الفني بسبب تدني أسعاره بنسبة 25% فأكثر.",
+      "percentage": "25%",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 19 - الاستبعاد من المنافسة"
+    },
+    {
+      "requirement_text": "يحق للجهة التفاوض في حال ارتفع سعر أفضل عرض عن الأسعار السائدة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 66 - جدول الكميات والأسعار"
+      "section_name": "## 21 - التفاوض مع أصحاب العروض"
     },
     {
-      "requirement_text": "تقديم دعم فني مستمر لمدة 12 شهر بعد النشر.",
+      "requirement_text": "يجب على الجهة الحكومية إجراء تأهيل لاحق للمتنافس الفائز.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 66 - جدول الكميات والأسعار"
+      "section_name": "## 23 - التأهيل اللاحق"
     },
     {
-      "requirement_text": "إجراء اختبارات وظيفية، أداء وأمان في بيئة تجريبية.",
+      "requirement_text": "يجب أن تكون معايير تقييم العروض واضحة وموضوعية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار"
-    },
-    {
-      "requirement_text": "تقديم وثيقة مراجعة أمنية توضح موقع تخزين ومعالجة البيانات.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار"
-    },
-    {
-      "requirement_text": "الالتزام بكافة الأنظمة واللوائح المحلية والدولية ذات العلاقة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 72 - مواصفات السلامة"
-    },
-    {
-      "requirement_text": "تقديم شهادة امتثال موقعة من مزودي الخدمات.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار"
-    },
-    {
-      "requirement_text": "تقديم ملاحظات لمراجعة الأداء وإجراء التعديلات اللازمة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 66 - جدول الكميات والأسعار"
-    },
-    {
-      "requirement_text": "تقديم تقارير دورية حول أداء المبادرات والمؤشرات.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 66 - جدول الكميات والأسعار"
-    },
-    {
-      "requirement_text": "تقديم دليل المستخدم المفصل.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 66 - جدول الكميات والأسعار"
-    },
-    {
-      "requirement_text": "تسليم المنتجات المدرجة في القائمة الإلزامية وفقًا للتعليمات الصادرة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 73 - القائمة الإلزامية"
-    },
-    {
-      "requirement_text": "تقديم عرض يتضمن الالتزام بالقائمة الإلزامية.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 73 - القائمة الإلزامية"
-    },
-    {
-      "requirement_text": "تقديم عرض يتضمن الالتزام بمعايير تقييم العروض.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
       "section_name": "## 50 - معايير تقييم العروض"
     },
     {
-      "requirement_text": "مراجعة جداول الكميات والأسعار الواردة في العرض.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 51 - تصحيح العروض"
-    },
-    {
-      "requirement_text": "إجراء التصحيحات الحسابية اللازمة في العرض.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 51 - تصحيح العروض"
-    },
-    {
-      "requirement_text": "استبعاد العرض إذا تجاوزت الأخطاء الحسابية في الأسعار أكثر من 10%.",
-      "percentage": "10%",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 51 - تصحيح العروض"
-    },
-    {
-      "requirement_text": "تقييم مصادر البيانات وتحديد آليات التكامل.",
+      "requirement_text": "يجب على لجنة فحص العروض مراجعة جداول الكميات والأسعار وإجراء التصحيحات الحسابية اللازمة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 66 - جدول الكميات والأسعار"
+      "section_name": "## 51 - تصحيح العروض"
+    },
+    {
+      "requirement_text": "تلتزم لجنة فحص العروض بمعايير التأهيل ومعايير التقييم وشروط المنافسة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 52 - فحص العروض"
+    },
+    {
+      "requirement_text": "يهدف المشروع إلى تطوير مساعد ذكي يعتمد على تقنيات الذكاء الاصطناعي.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع"
+    },
+    {
+      "requirement_text": "يجب الالتزام بالمعايير الدولية مثل ISO/IEC 27001 وISO/IEC 9001.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 71 - مواصفات الجودة :"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 72 - مواصفات السلامة"
+    },
+    {
+      "requirement_text": "يجب على المتنافس الالتزام بالقائمة الإلزامية عند توريد الأصناف والمواد.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 73 - القائمة الإلزامية"
     }
   ]
 }
