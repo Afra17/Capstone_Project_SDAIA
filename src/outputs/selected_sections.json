@@ -3,77 +3,67 @@
     {
       "section_name": "## 2 - تعريف عن المنافسة",
       "relevance_score": 80,
-      "reasoning": "Describes the project to develop an AI tool for data collection and analysis, outlining the scope and phases of implementation."
-    },
-    {
-      "section_name": "## 5 - أهلية مقدمي العروض",
-      "relevance_score": 70,
-      "reasoning": "Defines eligibility criteria for bidders, which is crucial for determining who can participate in the competition."
-    },
-    {
-      "section_name": "## 6 - السجلات والتراخيص النظامية",
-      "relevance_score": 60,
-      "reasoning": "Specifies required documentation and licenses for bidders, ensuring compliance with legal requirements."
-    },
-    {
-      "section_name": "## 10 - المساواة والشفافية",
-      "relevance_score": 65,
-      "reasoning": "Outlines the government's commitment to transparency and equal treatment of bidders, which is essential for fair competition."
+      "reasoning": "يصف نطاق العمل والمخرجات المطلوبة من المشروع، مما يحدد ما يجب على المتنافسين تقديمه."
     },
     {
       "section_name": "## 19 - الاستبعاد من المنافسة",
-      "relevance_score": 75,
-      "reasoning": "Details conditions under which bids may be disqualified, impacting the evaluation process."
-    },
-    {
-      "section_name": "## 21 - التفاوض مع أصحاب العروض",
       "relevance_score": 70,
-      "reasoning": "Describes the negotiation process for bids exceeding market prices, which is critical for finalizing contracts."
+      "reasoning": "يوضح المعايير التي يمكن أن تؤدي إلى استبعاد العروض، مما يؤثر على تقييم العروض المقدمة."
     },
     {
-      "section_name": "## 23 - التأهيل اللاحق",
-      "relevance_score": 65,
-      "reasoning": "Explains the post-qualification process for the winning bidder, ensuring they meet ongoing requirements."
+      "section_name": "## 21- التفاوض مع أصحاب العروض",
+      "relevance_score": 75,
+      "reasoning": "يحدد كيفية التفاوض على الأسعار، مما يؤثر على تقييم العروض المقدمة."
+    },
+    {
+      "section_name": "## 22 - التعاقد من الباطن",
+      "relevance_score": 70,
+      "reasoning": "يحدد الشروط المتعلقة بالتعاقد من الباطن، مما يؤثر على كيفية تنفيذ المشروع."
+    },
+    {
+      "section_name": "## 31 - ضمان المعلومات",
+      "relevance_score": 60,
+      "reasoning": "يحدد التزامات المتنافسين في تقديم معلومات دقيقة، مما يؤثر على جودة العروض."
+    },
+    {
+      "section_name": "## 34 - وثائق العرض الفني",
+      "relevance_score": 80,
+      "reasoning": "يحدد المتطلبات الفنية التي يجب على المتنافسين تلبيتها في عروضهم."
+    },
+    {
+      "section_name": "## 35 - وثائق العرض المالي",
+      "relevance_score": 80,
+      "reasoning": "يحدد المتطلبات المالية التي يجب على المتنافسين تلبيتها في عروضهم."
+    },
+    {
+      "section_name": "## 36 - كتابة الأسعار",
+      "relevance_score": 85,
+      "reasoning": "يحدد كيفية تقديم الأسعار، مما يؤثر بشكل مباشر على تقييم العروض."
     },
     {
       "section_name": "## 50 - معايير تقييم العروض",
-      "relevance_score": 85,
-      "reasoning": "Sets the criteria for evaluating bids, which directly influences the selection of the winning proposal."
-    },
-    {
-      "section_name": "## 51 - تصحيح العروض",
-      "relevance_score": 75,
-      "reasoning": "Details the process for correcting bid discrepancies, which is important for maintaining fairness in evaluation."
+      "relevance_score": 90,
+      "reasoning": "يحدد المعايير التي ستستخدم لتقييم العروض، مما يؤثر بشكل مباشر على نتائج التقييم."
     },
     {
       "section_name": "## 52 - فحص العروض",
-      "relevance_score": 80,
-      "reasoning": "Describes the examination of bids against qualification criteria, essential for determining compliance."
+      "relevance_score": 85,
+      "reasoning": "يحدد كيفية فحص العروض المقدمة، مما يؤثر على نتائج التقييم."
     },
     {
       "section_name": "## 63 - نطاق عمل المشروع",
       "relevance_score": 90,
-      "reasoning": "Defines the project's scope and deliverables, which are critical for understanding the requirements of the proposal."
+      "reasoning": "يحدد تفاصيل نطاق العمل المطلوب، مما يؤثر على كيفية تنفيذ المشروع."
     },
     {
-      "section_name": "## 66 - جدول الكميات والأسعار",
-      "relevance_score": 70,
-      "reasoning": "Provides a breakdown of quantities and pricing, which is essential for financial evaluation."
-    },
-    {
-      "section_name": "## 71 - مواصفات الجودة :",
+      "section_name": "## 71 - مواصفات الجودة:",
       "relevance_score": 75,
-      "reasoning": "Specifies quality standards that must be met, which is crucial for project success."
+      "reasoning": "يحدد متطلبات الجودة التي يجب على المتنافسين الالتزام بها، مما يؤثر على تقييم العروض."
     },
     {
       "section_name": "## 72 - مواصفات السلامة",
       "relevance_score": 75,
-      "reasoning": "Outlines safety and health regulations that must be adhered to, ensuring compliance with legal standards."
-    },
-    {
-      "section_name": "## 73 - القائمة الإلزامية",
-      "relevance_score": 70,
-      "reasoning": "Details mandatory compliance with local content requirements, which is important for project execution."
+      "reasoning": "يحدد متطلبات السلامة التي يجب على المتنافسين الالتزام بها، مما يؤثر على تقييم العروض."
     }
   ]
 }

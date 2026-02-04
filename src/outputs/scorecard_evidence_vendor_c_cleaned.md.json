@@ -1,0 +1,306 @@
+{
+  "vendor_name": "Vendor C",
+  "total_score_percent": 58.65,
+  "total_weighted_points": 45.75,
+  "max_possible_points": 78.0,
+  "strengths": [],
+  "gaps": [],
+  "critical_missing": [
+    "ضمان التكامل مع أنظمة الوزارة الحالية.",
+    "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
+    "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+    "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي."
+  ],
+  "scored_requirements": [
+    {
+      "requirement_text": "تطوير أداة ذكاء اصطناعي تدمج البيانات من مصادر متعددة لتتبع حالة المبادرات.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "يقدّم [Vendor C] منصة ذكية متكاملة تعتمد على أحدث تقنيات الذكاء الاصطناعي (AI) وتحليل البيانات الضخمة (Big Data) لدعم مكاتب تحقيق الرؤية.",
+      "scoring_reason": [
+        "يظهر التزام المورد بتقديم منصة متكاملة.",
+        "يستخدم تقنيات حديثة في الذكاء الاصطناعي.",
+        "يدعم المبادرات الحكومية."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تحليل الأداء وإنتاج تقارير ذكية.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "يهدف المشروع إلى أتمتة عمليات جمع البيانات وتحليلها بشكل ذكي.",
+      "scoring_reason": [
+        "يوفر أتمتة لجمع البيانات.",
+        "يستخدم تقنيات الذكاء الاصطناعي.",
+        "يقدم تقارير ذكية."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التصميم.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "سيتم تنفيذ المشروع عبر مراحل عامة تشمل التحليل، التصميم، التطوير، ثم التشغيل.",
+      "scoring_reason": [
+        "يوضح منهجية واضحة للتنفيذ.",
+        "يشمل مراحل متعددة.",
+        "يضمن مراجعة كل مرحلة."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التطوير.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "سيتم تنفيذ المشروع عبر مراحل عامة تشمل التحليل، التصميم، التطوير، ثم التشغيل.",
+      "scoring_reason": [
+        "يوضح منهجية واضحة للتطوير.",
+        "يشمل مراحل متعددة.",
+        "يضمن مراجعة الأداء بعد التطوير."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل النشر.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "سيتم الانتهاء من المشروع ضمن مدة العقد المحددة.",
+      "scoring_reason": [
+        "يظهر التزاماً بالجدول الزمني.",
+        "يضمن مراقبة الأداء بعد النشر.",
+        "يقدم دعم فني للمستخدمين."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "ضمان التكامل مع أنظمة الوزارة الحالية.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد",
+      "scoring_reason": [],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يلتزم مقدم العرض باتخاذ جميع الإجراءات اللازمة للتحقق من دقة المعلومات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "نقر بصحة المعلومات الواردة في هذا العرض.",
+      "scoring_reason": [
+        "يظهر التزاماً بالتحقق من المعلومات.",
+        "يستخدم أدوات تحليل البيانات.",
+        "يضمن جودة المعلومات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "يتكون فريق العمل من خبراء ذوي كفاءات عالية.",
+      "scoring_reason": [
+        "يظهر وجود فريق عمل متخصص.",
+        "يؤكد على كفاءة الأعضاء.",
+        "يضمن إدارة فعالة للفريق."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد",
+      "scoring_reason": [],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: فريق العمل.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "يتكون فريق العمل من خبراء ذوي كفاءات عالية.",
+      "scoring_reason": [
+        "يظهر وجود فريق عمل متخصص.",
+        "يؤكد على كفاءة الأعضاء.",
+        "يضمن إدارة فعالة للفريق."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "إجمالي قيمة العرض: 9,500,000 ريال سعودي.",
+      "scoring_reason": [
+        "يقدم جدول كميات مفصل.",
+        "يشمل جميع الأسعار والضرائب.",
+        "يضمن شمولية التسعير."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد",
+      "scoring_reason": [],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد",
+      "scoring_reason": [],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يجب على المتنافس تقديم سعره وفقا للشروط والمواصفات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "نؤكد أن التسعير شامل لكافة عناصر المشروع.",
+      "scoring_reason": [
+        "يظهر التزاماً بالشروط والمواصفات.",
+        "يقدم عرض مالي شامل.",
+        "يضمن عدم وجود بنود مستثناة."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "إجمالي قيمة العرض: 9,500,000 ريال سعودي.",
+      "scoring_reason": [
+        "يقدم جدول كميات مفصل.",
+        "يضمن كتابة الأسعار بالأرقام والحروف.",
+        "يقدم الجدول بشكل منظم."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "لا يجوز لمقدم العرض التعديل أو المحو أو الطمس على قائمة الأسعار.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "نقر بصحة المعلومات الواردة في هذا العرض.",
+      "scoring_reason": [
+        "يضمن الشفافية في تقديم الأسعار.",
+        "يؤكد على عدم إجراء أي تعديلات.",
+        "يقدم الأسعار بشكل واضح."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "سيتم ضمان الجودة وفق أفضل الممارسات.",
+      "scoring_reason": [
+        "يظهر التزاماً بمعايير الجودة.",
+        "يضمن مراجعة المخرجات بشكل دوري.",
+        "يقدم تقارير الجودة."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد خلال جميع مراحل التنفيذ بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "يلتزم [Vendor C] بتطبيق أعلى معايير الأمن السيبراني والحوكمة.",
+      "scoring_reason": [
+        "يظهر التزاماً بمعايير السلامة.",
+        "يضمن تدريب الفريق على معايير السلامة.",
+        "يقدم تقارير السلامة."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "vendor_name": "Vendor B",
+  "total_score_percent": 55.77,
+  "total_weighted_points": 43.5,
+  "max_possible_points": 78.0,
+  "strengths": [],
+  "gaps": [],
+  "critical_missing": [
+    "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+    "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+    "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+    "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+    "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً."
+  ],
+  "scored_requirements": [
+    {
+      "requirement_text": "تطوير أداة ذكاء اصطناعي تدمج البيانات من مصادر متعددة لتتبع حالة المبادرات.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "تتولى جهة الطلابة (مكتب تحقيق الرؤية) مسؤولية متابعة المبادرات والمشاريع ومؤشرات الأداء المرتبطة بالأهداف القطاعية السنوية.",
+      "scoring_reason": [
+        "يوضح الدليل التزام الجهة بالمتطلبات.",
+        "يوفر معلومات عن متابعة المبادرات.",
+        "يدعم الفهم العام للمتطلبات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تحليل الأداء وإنتاج تقارير ذكية.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "توفير رؤية موحدة للأداء وإتاحة الوصول الذاتي للمعلومة عبر لوحات وتقارير موحدة.",
+      "scoring_reason": [
+        "يوفر الدليل معلومات عن تقارير الأداء.",
+        "يدعم إمكانية الوصول للمعلومات.",
+        "يعكس التزام الجهة بتقديم تقارير ذكية."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التصميم.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "المرحلةُ 2: التصميم (Solution Design) تشمل تصميم UX/UI والمعمارية والتكامل.",
+      "scoring_reason": [
+        "يوضح الدليل مراحل التصميم.",
+        "يدعم الفهم العام لعملية التنفيذ.",
+        "يوفر تفاصيل عن التصميم."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التطوير.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "المرحلة 3: التطوير والإعداد تشمل تطوير ingestion والمستودع التحليلي.",
+      "scoring_reason": [
+        "يوضح الدليل مراحل التطوير.",
+        "يدعم الفهم العام لعملية التنفيذ.",
+        "يوفر تفاصيل عن التطوير."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل النشر.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "المرحلة 5: النشر والإطلاق تشمل تجهيز Prod/DR وتنفيذ خطة Go-Live.",
+      "scoring_reason": [
+        "يوضح الدليل مراحل النشر.",
+        "يدعم الفهم العام لعملية التنفيذ.",
+        "يوفر تفاصيل عن النشر."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "ضمان التكامل مع أنظمة الوزارة الحالية.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "تنسيق مبكر مع فرق التحول الرقمي/الأمن لاعتماد نقاط التكامل والصلاحيات.",
+      "scoring_reason": [
+        "يوضح الدليل أهمية التكامل.",
+        "يدعم الفهم العام لعملية التنفيذ.",
+        "يوفر تفاصيل عن التنسيق."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يلتزم مقدم العرض باتخاذ جميع الإجراءات اللازمة للتحقق من دقة المعلومات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "يقر [Vendor B] ويلتزم صراحةً بالآتي: استكمال الشهادات/المتطلبات المطلوبة.",
+      "scoring_reason": [
+        "يوضح الدليل التزام المورد بالتحقق.",
+        "يدعم الفهم العام للمتطلبات.",
+        "يوفر تفاصيل عن الإجراءات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "scoring_reason": [
+        "لا يوجد دليل يدعم الخبرات السابقة.",
+        "يؤثر ذلك على تقييم العرض.",
+        "يعتبر نقصاً في المعلومات."
+      ],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "مدة العقد ١٨ شهراً تشمل التنفيذ والتشغيل المرحلي.",
+      "scoring_reason": [
+        "يوضح الدليل الجدول الزمني.",
+        "يدعم الفهم العام للمتطلبات.",
+        "يوفر تفاصيل عن المدة."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: فريق العمل.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "فريق العمل يتضمن مدير مشروع، معماري حلول، قائد بيانات، مهندس تكامل، مهندس ذكاء اصطناعي.",
+      "scoring_reason": [
+        "يوضح الدليل تكوين الفريق.",
+        "يدعم الفهم العام للمتطلبات.",
+        "يوفر تفاصيل عن الأدوار."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "scoring_reason": [
+        "لا يوجد دليل يدعم جدول الكميات.",
+        "يؤثر ذلك على تقييم العرض.",
+        "يعتبر نقصاً في المعلومات."
+      ],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "scoring_reason": [
+        "لا يوجد دليل يدعم جدول الدفعات.",
+        "يؤثر ذلك على تقييم العرض.",
+        "يعتبر نقصاً في المعلومات."
+      ],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "scoring_reason": [
+        "لا يوجد دليل يدعم الضمان الابتدائي.",
+        "يؤثر ذلك على تقييم العرض.",
+        "يعتبر نقصاً في المعلومات."
+      ],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "يجب على المتنافس تقديم سعره وفقا للشروط والمواصفات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "يقر [Vendor B] علمه والتزامه بجميع الأنظمة واللوائح المعمول بها.",
+      "scoring_reason": [
+        "يوضح الدليل التزام المورد بالشروط.",
+        "يدعم الفهم العام للمتطلبات.",
+        "يوفر تفاصيل عن الالتزام."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "غير مطابق",
+      "normalized_score": 0.0,
+      "weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "scoring_reason": [
+        "لا يوجد دليل يدعم تدوين الأسعار.",
+        "يؤثر ذلك على تقييم العرض.",
+        "يعتبر نقصاً في المعلومات."
+      ],
+      "risk_note": "لا يوجد دليل واضح.",
+      "evidence_strength": "weak",
+      "evidence_match": "off_topic"
+    },
+    {
+      "requirement_text": "لا يجوز لمقدم العرض التعديل أو المحو أو الطمس على قائمة الأسعار.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.0,
+      "evidence_quote": "يقر [Vendor B] بالتزامه بقواعد إعادة التسعير.",
+      "scoring_reason": [
+        "يوضح الدليل التزام المورد بالقواعد.",
+        "يدعم الفهم العام للمتطلبات.",
+        "يوفر تفاصيل عن الالتزام."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "يجب الالتزام بمعايير الجودة في جميع مراحل التنفيذ.",
+      "scoring_reason": [
+        "يوضح الدليل التزام المورد بمعايير الجودة.",
+        "يدعم الفهم العام للمتطلبات.",
+        "يوفر تفاصيل عن الالتزام."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد خلال جميع مراحل التنفيذ بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.75,
+      "weighted_points": 3.75,
+      "evidence_quote": "يجب الالتزام بالأنظمة والقواعد المتعلقة بالسلامة.",
+      "scoring_reason": [
+        "يوضح الدليل التزام المورد بقواعد السلامة.",
+        "يدعم الفهم العام للمتطلبات.",
+        "يوفر تفاصيل عن الالتزام."
+      ],
+      "risk_note": "",
+      "evidence_strength": "medium",
+      "evidence_match": "indirect"
+    }
+  ]
+}

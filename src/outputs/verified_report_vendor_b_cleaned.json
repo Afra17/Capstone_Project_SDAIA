@@ -1,0 +1,366 @@
+{
+  "vendor_name": "Vendor B",
+  "original_total_score_percent": 55.77,
+  "verified_total_score_percent": 55.77,
+  "max_possible_points": 78.0,
+  "original_total_weighted_points": 43.5,
+  "verified_total_weighted_points": 43.5,
+  "recommendation": "يحتاج استيضاح",
+  "final_summary": "تمت مراجعة جميع المتطلبات المقدمة من قبل المورد، حيث تم التحقق من وجود أدلة قوية تدعم معظم المتطلبات الفنية. ومع ذلك، هناك بعض الفجوات في الأدلة المتعلقة بالمتطلبات المالية، مما يستدعي تحسينات في هذا الجانب. بشكل عام، يظهر المورد التزاماً واضحاً بجميع الأنظمة واللوائح، مما يعزز من مصداقيته في تنفيذ المشروع.",
+  "audit_notes": [
+    "تم التحقق من جميع المتطلبات الفنية.",
+    "بعض المتطلبات المالية تفتقر إلى الأدلة.",
+    "يجب تحسين تقديم المعلومات المالية."
+  ],
+  "vendor_profile_snapshot": [
+    "مكتب تحقيق الرؤية مسؤول عن متابعة المبادرات.",
+    "توفير رؤية موحدة للأداء عبر تقارير.",
+    "التزام بجميع الأنظمة واللوائح."
+  ],
+  "strengths": [
+    "توافر أدلة قوية تدعم جميع المتطلبات الفنية.",
+    "التزام واضح من قبل المورد بجميع الأنظمة.",
+    "وجود خطة شاملة لتنفيذ الأداة على مراحل."
+  ],
+  "gaps": [
+    "عدم وجود دليل واضح لبعض المتطلبات المالية.",
+    "عدم تقديم الخبرات السابقة في العرض.",
+    "عدم توضيح جدول الكميات والأسعار."
+  ],
+  "critical_missing": [
+    "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+    "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+    "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+    "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+    "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً."
+  ],
+  "table_rows": [
+    {
+      "requirement_text": "تطوير أداة ذكاء اصطناعي تدمج البيانات من مصادر متعددة لتتبع حالة المبادرات.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.75,
+      "verified_weighted_points": 3.75,
+      "evidence_quote": "تتولى جهة الطلابة (مكتب تحقيق الرؤية) مسؤولية متابعة المبادرات والمشاريع ومؤشرات الأداء المرتبطة بالأهداف القطاعية السنوية.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "تحليل الأداء وإنتاج تقارير ذكية.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.0,
+      "verified_weighted_points": 3.0,
+      "evidence_quote": "توفير رؤية موحدة للأداء وإتاحة الوصول الذاتي للمعلومة عبر لوحات وتقارير موحدة.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التصميم.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.75,
+      "verified_weighted_points": 3.75,
+      "evidence_quote": "المرحلةُ 2: التصميم (Solution Design) تشمل تصميم UX/UI والمعمارية والتكامل.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل التطوير.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.75,
+      "verified_weighted_points": 3.75,
+      "evidence_quote": "المرحلة 3: التطوير والإعداد تشمل تطوير ingestion والمستودع التحليلي.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "تنفيذ الأداة على مراحل تشمل النشر.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.0,
+      "verified_weighted_points": 3.0,
+      "evidence_quote": "المرحلة 5: النشر والإطلاق تشمل تجهيز Prod/DR وتنفيذ خطة Go-Live.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "ضمان التكامل مع أنظمة الوزارة الحالية.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.75,
+      "verified_weighted_points": 3.75,
+      "evidence_quote": "تنسيق مبكر مع فرق التحول الرقمي/الأمن لاعتماد نقاط التكامل والصلاحيات.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "يلتزم مقدم العرض باتخاذ جميع الإجراءات اللازمة للتحقق من دقة المعلومات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.0,
+      "verified_weighted_points": 3.0,
+      "evidence_quote": "يقر [Vendor B] ويلتزم صراحةً بالآتي: استكمال الشهادات/المتطلبات المطلوبة.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.0,
+      "verified_normalized_score": 0.0,
+      "original_weighted_points": 0.0,
+      "verified_weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "verified_match": "off_topic",
+      "verified_strength": "weak",
+      "confidence": "Low",
+      "flags": [
+        "missing_evidence"
+      ],
+      "adjustment_reason_ar": "لا يوجد دليل واضح"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.0,
+      "verified_weighted_points": 3.0,
+      "evidence_quote": "مدة العقد ١٨ شهراً تشمل التنفيذ والتشغيل المرحلي.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: فريق العمل.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.0,
+      "verified_weighted_points": 3.0,
+      "evidence_quote": "فريق العمل يتضمن مدير مشروع، معماري حلول، قائد بيانات، مهندس تكامل، مهندس ذكاء اصطناعي.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.0,
+      "verified_normalized_score": 0.0,
+      "original_weighted_points": 0.0,
+      "verified_weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "verified_match": "off_topic",
+      "verified_strength": "weak",
+      "confidence": "Low",
+      "flags": [
+        "missing_evidence"
+      ],
+      "adjustment_reason_ar": "لا يوجد دليل واضح"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.0,
+      "verified_normalized_score": 0.0,
+      "original_weighted_points": 0.0,
+      "verified_weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "verified_match": "off_topic",
+      "verified_strength": "weak",
+      "confidence": "Low",
+      "flags": [
+        "missing_evidence"
+      ],
+      "adjustment_reason_ar": "لا يوجد دليل واضح"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.0,
+      "verified_normalized_score": 0.0,
+      "original_weighted_points": 0.0,
+      "verified_weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "verified_match": "off_topic",
+      "verified_strength": "weak",
+      "confidence": "Low",
+      "flags": [
+        "missing_evidence"
+      ],
+      "adjustment_reason_ar": "لا يوجد دليل واضح"
+    },
+    {
+      "requirement_text": "يجب على المتنافس تقديم سعره وفقا للشروط والمواصفات.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.0,
+      "verified_weighted_points": 3.0,
+      "evidence_quote": "يقر [Vendor B] علمه والتزامه بجميع الأنظمة واللوائح المعمول بها.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.0,
+      "verified_normalized_score": 0.0,
+      "original_weighted_points": 0.0,
+      "verified_weighted_points": 0.0,
+      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
+      "verified_match": "off_topic",
+      "verified_strength": "weak",
+      "confidence": "Low",
+      "flags": [
+        "missing_evidence"
+      ],
+      "adjustment_reason_ar": "لا يوجد دليل واضح"
+    },
+    {
+      "requirement_text": "لا يجوز لمقدم العرض التعديل أو المحو أو الطمس على قائمة الأسعار.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.0,
+      "verified_weighted_points": 3.0,
+      "evidence_quote": "يقر [Vendor B] بالتزامه بقواعد إعادة التسعير.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.75,
+      "verified_weighted_points": 3.75,
+      "evidence_quote": "يجب الالتزام بمعايير الجودة في جميع مراحل التنفيذ.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    },
+    {
+      "requirement_text": "يلتزم المتعاقد خلال جميع مراحل التنفيذ بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "original_normalized_score": 0.75,
+      "verified_normalized_score": 0.75,
+      "original_weighted_points": 3.75,
+      "verified_weighted_points": 3.75,
+      "evidence_quote": "يجب الالتزام بالأنظمة والقواعد المتعلقة بالسلامة.",
+      "verified_match": "direct",
+      "verified_strength": "strong",
+      "confidence": "High",
+      "flags": [],
+      "adjustment_reason_ar": ""
+    }
+  ],
+  "score_adjustments": [
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+      "from_score": 0.0,
+      "to_score": 0.0,
+      "reason_ar": "لا يوجد دليل واضح",
+      "flags": [
+        "missing_evidence"
+      ]
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+      "from_score": 0.0,
+      "to_score": 0.0,
+      "reason_ar": "لا يوجد دليل واضح",
+      "flags": [
+        "missing_evidence"
+      ]
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+      "from_score": 0.0,
+      "to_score": 0.0,
+      "reason_ar": "لا يوجد دليل واضح",
+      "flags": [
+        "missing_evidence"
+      ]
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+      "from_score": 0.0,
+      "to_score": 0.0,
+      "reason_ar": "لا يوجد دليل واضح",
+      "flags": [
+        "missing_evidence"
+      ]
+    },
+    {
+      "requirement_text": "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً.",
+      "from_score": 0.0,
+      "to_score": 0.0,
+      "reason_ar": "لا يوجد دليل واضح",
+      "flags": [
+        "missing_evidence"
+      ]
+    }
+  ]
+}

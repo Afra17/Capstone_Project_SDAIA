@@ -43,102 +43,151 @@
       "section_name": "## 2 - تعريف عن المنافسة"
     },
     {
-      "requirement_text": "لا يجوز المشاركة في المنافسة لموظفي الدولة إلا في حالات محددة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 5 - أهلية مقدمي العروض"
-    },
-    {
-      "requirement_text": "يجب أن تتوفر لدى المتنافسين الوثائق التالية: السجل التجاري، تصنيف المقاولين، شهادة الزكاة، شهادة الضريبة، التأمينات الاجتماعية، شهادة اشتراك الغرفة التجارية، شهادة السعودة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 6 - السجلات والتراخيص النظامية"
-    },
-    {
-      "requirement_text": "يجب على الجهة الحكومية اطلاع كافة المتنافسين على المعلومات ذات العلاقة بنطاق العمل.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 10 - المساواة والشفافية"
-    },
-    {
-      "requirement_text": "يحق للجهة استبعاد أي عرض اجتاز التقييم الفني بسبب تدني أسعاره بنسبة 25% فأكثر.",
+      "requirement_text": "استبعاد أي عرض اجتاز التقييم الفني بسبب تدني أسعاره بنسبة (25%) فأكثر عن التكلفة التقديرية.",
       "percentage": "25%",
       "deadline": "Not Specified",
       "category": "Administrative",
       "section_name": "## 19 - الاستبعاد من المنافسة"
     },
     {
-      "requirement_text": "يحق للجهة التفاوض في حال ارتفع سعر أفضل عرض عن الأسعار السائدة.",
+      "requirement_text": "تحديد مبلغ التخفيض بما يتفق مع الأسعار السائدة في السوق.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 21 - التفاوض مع أصحاب العروض"
+      "section_name": "## 21- التفاوض مع أصحاب العروض"
     },
     {
-      "requirement_text": "يجب على الجهة الحكومية إجراء تأهيل لاحق للمتنافس الفائز.",
+      "requirement_text": "طلب كتابياً من صاحب أفضل عرض تخفيض سعره.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 23 - التأهيل اللاحق"
+      "section_name": "## 21- التفاوض مع أصحاب العروض"
     },
     {
-      "requirement_text": "يجب أن تكون معايير تقييم العروض واضحة وموضوعية.",
+      "requirement_text": "التفاوض مع صاحب العرض الذي يليه إذا امتنع صاحب العرض الأول.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 21- التفاوض مع أصحاب العروض"
+    },
+    {
+      "requirement_text": "تقديم قائمة بأسماء المتعاقدين من الباطن لاعتمادهم من قبل الجهة الحكومية.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 22 - التعاقد من الباطن"
+    },
+    {
+      "requirement_text": "يجب أن تشمل العروض التي تتضمن متعاقدين من الباطن على الكميات الموكلة لهم وأسعارهم.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 22 - التعاقد من الباطن"
+    },
+    {
+      "requirement_text": "ألا تزيد نسبة الأعمال والمشتريات المسندة إلى المتعاقد من الباطن على (30%) من قيمة العقد.",
+      "percentage": "30%",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 22 - التعاقد من الباطن"
+    },
+    {
+      "requirement_text": "يلتزم مقدم العرض باتخاذ جميع الإجراءات اللازمة للتحقق من دقة المعلومات.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
+      "section_name": "## 31 - ضمان المعلومات"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 34 - وثائق العرض الفني"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 34 - وثائق العرض الفني"
+    },
+    {
+      "requirement_text": "يشمل العرض الفني المتطلبات التالية: فريق العمل.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 34 - وثائق العرض الفني"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 35 - وثائق العرض المالي"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 35 - وثائق العرض المالي"
+    },
+    {
+      "requirement_text": "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 35 - وثائق العرض المالي"
+    },
+    {
+      "requirement_text": "يجب على المتنافس تقديم سعره وفقا للشروط والمواصفات.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 36 - كتابة الأسعار"
+    },
+    {
+      "requirement_text": "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 36 - كتابة الأسعار"
+    },
+    {
+      "requirement_text": "لا يجوز لمقدم العرض التعديل أو المحو أو الطمس على قائمة الأسعار.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 36 - كتابة الأسعار"
+    },
+    {
+      "requirement_text": "يراعى في معايير تقييم العروض أن تكون واضحة وموضوعية ومحققة للمصلحة العامة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
       "section_name": "## 50 - معايير تقييم العروض"
-    },
-    {
-      "requirement_text": "يجب على لجنة فحص العروض مراجعة جداول الكميات والأسعار وإجراء التصحيحات الحسابية اللازمة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 51 - تصحيح العروض"
     },
     {
       "requirement_text": "تلتزم لجنة فحص العروض بمعايير التأهيل ومعايير التقييم وشروط المنافسة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
-      "category": "Technical",
+      "category": "Administrative",
       "section_name": "## 52 - فحص العروض"
-    },
-    {
-      "requirement_text": "يهدف المشروع إلى تطوير مساعد ذكي يعتمد على تقنيات الذكاء الاصطناعي.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع"
-    },
-    {
-      "requirement_text": "يجب الالتزام بالمعايير الدولية مثل ISO/IEC 27001 وISO/IEC 9001.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
       "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 71 - مواصفات الجودة :"
+      "section_name": "## 71 - مواصفات الجودة:"
     },
     {
-      "requirement_text": "يلتزم المتعاقد بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
+      "requirement_text": "يلتزم المتعاقد خلال جميع مراحل التنفيذ بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
       "section_name": "## 72 - مواصفات السلامة"
-    },
-    {
-      "requirement_text": "يجب على المتنافس الالتزام بالقائمة الإلزامية عند توريد الأصناف والمواد.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 73 - القائمة الإلزامية"
     }
   ]
 }

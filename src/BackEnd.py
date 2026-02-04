@@ -10,8 +10,11 @@ from dotenv import load_dotenv
 from src.Agents.utils.document_processor import run_full_cleaning_pipeline
 from src.Agents.utils.proposal_processor import run_pipeline
 
-# ✅ Correct functions
-from src.Agents.crew_manager import run_rfp_crew, run_vendor_only_crew
+# ✅ RFP pipeline (A1-A3)
+from src.Agents.crew_manager import run_rfp_crew
+
+# ✅ FULL Vendor pipeline (A4 -> A5 -> A6)
+from src.Agents.crew_manager import run_vendor_full_pipeline_A4_A5_A6
 
 load_dotenv()
 
@@ -26,17 +29,22 @@ app.add_middleware(
 )
 
 # -------------------------
-# Simple in-memory job status
+# Simple in-memory job status + results
 # -------------------------
 job_status: Dict[str, str] = {}
+job_results: Dict[str, Dict] = {}
 
 
 def project_root() -> str:
     """
-    Assuming this file is at: <root>/src/BackEnd.py
-    Then project root is: <root>
+    Robust project root detector:
+    - If this file is inside <root>/src/ -> return <root>
+    - If this file is in <root>/ -> return <root>
     """
-    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    here = os.path.dirname(os.path.abspath(__file__))
+    if os.path.basename(here).lower() == "src":
+        return os.path.dirname(here)
+    return here
 
 
 def save_upload_to_temp(upload: UploadFile) -> str:
@@ -50,12 +58,23 @@ def save_upload_to_temp(upload: UploadFile) -> str:
     with open(tmp_path, "wb") as out_file:
         shutil.copyfileobj(upload.file, out_file)
 
+    # ✅ Close Windows file handle
+    try:
+        upload.file.close()
+    except Exception:
+        pass
+
     return tmp_path
 
 
 @app.get("/status/{job_id}")
 def status(job_id: str):
     return {"job_id": job_id, "status": job_status.get(job_id, "unknown")}
+
+
+@app.get("/result/{job_id}")
+def get_result(job_id: str):
+    return {"job_id": job_id, "result": job_results.get(job_id, None)}
 
 
 @app.post("/upload-rfp")
@@ -74,13 +93,14 @@ async def upload_rfp(background_tasks: BackgroundTasks, file: UploadFile = File(
 
 
 def start_rfp_pipeline(job_id: str, local_path: str):
+    tmp_dir = os.path.dirname(local_path)
     try:
         job_status[job_id] = "running"
 
         # 1) Clean RFP to markdown
         cleaned_md_path = run_full_cleaning_pipeline(local_path)
 
-        # 2) Outputs directory (stable)
+        # 2) Outputs directory
         root = project_root()
         output_dir = os.path.join(root, "src", "outputs")
         os.makedirs(output_dir, exist_ok=True)
@@ -90,9 +110,13 @@ def start_rfp_pipeline(job_id: str, local_path: str):
 
         job_status[job_id] = "done"
         print(f"✅ RFP Job {job_id} finished successfully!")
+
     except Exception as e:
         job_status[job_id] = f"failed: {str(e)}"
         print(f"❌ Error in RFP job {job_id}: {str(e)}")
+
+    finally:
+        shutil.rmtree(tmp_dir, ignore_errors=True)
 
 
 @app.post("/upload-vendors")
@@ -115,6 +139,7 @@ async def upload_vendors(background_tasks: BackgroundTasks, files: List[UploadFi
 
 
 def start_vendor_pipeline(job_id: str, local_path: str):
+    tmp_dir = os.path.dirname(local_path)
     try:
         job_status[job_id] = "running"
 
@@ -137,11 +162,28 @@ def start_vendor_pipeline(job_id: str, local_path: str):
         # 1) Clean vendor proposal
         cleaned_vendor_md_path = run_pipeline(local_path, processed_dir)
 
-        # 2) Run vendor-only crew (A4 ONLY)
-        run_vendor_only_crew(cleaned_vendor_md_path, output_dir, requirements_json_path=requirements_json)
+        # 2) Run FULL vendor pipeline: A4 -> A5 -> A6 (PER VENDOR)
+        result_bundle = run_vendor_full_pipeline_A4_A5_A6(
+            proposal_md_path=cleaned_vendor_md_path,
+            output_dir=output_dir,
+            requirements_json_path=requirements_json,
+            apply_adjustments=True,
+        )
+
+        # 3) Store results for /result/{job_id}
+        job_results[job_id] = {
+            "vendor_evidence_path": result_bundle.get("vendor_evidence_path"),
+            "scorecard_path": result_bundle.get("scorecard_path"),
+            "verified_report_path": result_bundle.get("verified_report_path"),
+            "verified_report": result_bundle.get("verified_report"),
+        }
 
         job_status[job_id] = "done"
         print(f"✅ Vendor Job {job_id} finished successfully!")
+
     except Exception as e:
         job_status[job_id] = f"failed: {str(e)}"
         print(f"❌ Error in Vendor job {job_id}: {str(e)}")
+
+    finally:
+        shutil.rmtree(tmp_dir, ignore_errors=True)
