@@ -1,0 +1,23 @@
+[
+  {
+    "vendor_name": "Unknown Vendor",
+    "verified_total_score_percent": 84.81,
+    "recommendation": "مؤهل فنيًا",
+    "critical_missing_count": 0,
+    "verified_file": "D:\\Capstone_Project_SDAIA\\src\\outputs\\agent6_moderator\\verified_Unknown_Vendor_Vendor C_36d2.json"
+  },
+  {
+    "vendor_name": "Unknown Vendor",
+    "verified_total_score_percent": 80.85,
+    "recommendation": "يحتاج استيضاح",
+    "critical_missing_count": 1,
+    "verified_file": "D:\\Capstone_Project_SDAIA\\src\\outputs\\agent6_moderator\\verified_Unknown_Vendor_Vendor A_ac28.json"
+  },
+  {
+    "vendor_name": "Unknown Vendor",
+    "verified_total_score_percent": 73.27,
+    "recommendation": "يحتاج استيضاح",
+    "critical_missing_count": 4,
+    "verified_file": "D:\\Capstone_Project_SDAIA\\src\\outputs\\agent6_moderator\\verified_Unknown_Vendor_Vendor B_5b79.json"
+  }
+]

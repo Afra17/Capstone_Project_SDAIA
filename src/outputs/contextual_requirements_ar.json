@@ -1,172 +1,214 @@
 {
   "requirements": [
     {
-      "requirement_text": "تطوير أداة ذكاء اصطناعي تدمج البيانات من مصادر متعددة لتتبع حالة المبادرات.",
+      "requirement_text": "تطوير مساعد ذكي يعتمد على تقنيات الذكاء الاصطناعي لأتمتة جمع وتحليل بيانات وكالة التخطيط الاستراتيجي ومكتب تحقيق الرؤية بوزارة البلدية والإسكان.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 2 - تعريف عن المنافسة"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "تحليل الأداء وإنتاج تقارير ذكية.",
+      "requirement_text": "تحسين كفاءة المتابعة والتحليل لدعم اتخاذ القرارات المستندة إلى البيانات.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 2 - تعريف عن المنافسة"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "تنفيذ الأداة على مراحل تشمل التصميم.",
+      "requirement_text": "جمع البيانات المتعلقة بحالة المبادرات والمشاريع من مصادر متعددة بشكل آلي.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 2 - تعريف عن المنافسة"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "تنفيذ الأداة على مراحل تشمل التطوير.",
+      "requirement_text": "تقديم تحليلات وتقارير مبسطة تدعم اتخاذ القرارات المستندة إلى البيانات.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 2 - تعريف عن المنافسة"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "تنفيذ الأداة على مراحل تشمل النشر.",
+      "requirement_text": "تطبيق معايير الأمن السيبراني (ISO/IEC 27001) وإدارة الجودة (ISO/IEC 9001).",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 2 - تعريف عن المنافسة"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "ضمان التكامل مع أنظمة الوزارة الحالية.",
+      "requirement_text": "تسهيل عملية جمع البيانات من مصادر متعددة وتوحيدها بطريقة آلية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 2 - تعريف عن المنافسة"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "استبعاد أي عرض اجتاز التقييم الفني بسبب تدني أسعاره بنسبة (25%) فأكثر عن التكلفة التقديرية.",
-      "percentage": "25%",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 19 - الاستبعاد من المنافسة"
-    },
-    {
-      "requirement_text": "تحديد مبلغ التخفيض بما يتفق مع الأسعار السائدة في السوق.",
+      "requirement_text": "تقديم تحليلات تنبؤية ووصفية دقيقة تُبرز الانحرافات والاتجاهات المستقبلية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 21- التفاوض مع أصحاب العروض"
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "طلب كتابياً من صاحب أفضل عرض تخفيض سعره.",
+      "requirement_text": "توفير وصول ذاتي لجميع أصحاب المصلحة إلى تقارير ومعلومات محدثة باستمرار.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 21- التفاوض مع أصحاب العروض"
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "التفاوض مع صاحب العرض الذي يليه إذا امتنع صاحب العرض الأول.",
+      "requirement_text": "متابعة مؤشرات الأداء وربطها بمسببات النجاح أو التعثر لدعم تحقيق الأهداف القطاعية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 21- التفاوض مع أصحاب العروض"
+      "category": "Technical",
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "تقديم قائمة بأسماء المتعاقدين من الباطن لاعتمادهم من قبل الجهة الحكومية.",
+      "requirement_text": "تقديم تقارير تفصيلية توثق جميع مراحل تنفيذ المشروع.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 22 - التعاقد من الباطن"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "يجب أن تشمل العروض التي تتضمن متعاقدين من الباطن على الكميات الموكلة لهم وأسعارهم.",
+      "requirement_text": "تسليم الكود المصدري كاملاً من خلال نظام إدارة الإصدارات المعتمد مثل (Git).",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
-      "section_name": "## 22 - التعاقد من الباطن"
+      "section_name": "## 63 - نطاق عمل المشروع"
     },
     {
-      "requirement_text": "ألا تزيد نسبة الأعمال والمشتريات المسندة إلى المتعاقد من الباطن على (30%) من قيمة العقد.",
-      "percentage": "30%",
-      "deadline": "Not Specified",
-      "category": "Administrative",
-      "section_name": "## 22 - التعاقد من الباطن"
-    },
-    {
-      "requirement_text": "يلتزم مقدم العرض باتخاذ جميع الإجراءات اللازمة للتحقق من دقة المعلومات.",
+      "requirement_text": "تقديم دعم فني مستمر لمدة 12 شهر بعد النشر مع تقارير تقييم الأداء.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 31 - ضمان المعلومات"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+      "requirement_text": "إجراء دراسة شاملة للوضع الحالي وتحديد الفجوات في أنظمة وتقنيات البيانات.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 34 - وثائق العرض الفني"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
+      "requirement_text": "تقييم مصادر البيانات (مثل منصات Oracle SAP وغيرها) وتحديد آليات التكامل.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 34 - وثائق العرض الفني"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يشمل العرض الفني المتطلبات التالية: فريق العمل.",
+      "requirement_text": "إعداد خارطة طريق تفصيلية تشمل أهداف المشروع ومتطلبات التكامل والأمن.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 34 - وثائق العرض الفني"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
+      "requirement_text": "تصميم تجربة المستخدم وواجهة الاستخدام.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 35 - وثائق العرض المالي"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
+      "requirement_text": "إعداد نماذج أولية (Prototype) للواجهة التفاعلية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 35 - وثائق العرض المالي"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
+      "requirement_text": "تحديد مسارات المستخدم وحالات الاستخدام وفقاً لتحليل الاحتياجات.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 35 - وثائق العرض المالي"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يجب على المتنافس تقديم سعره وفقا للشروط والمواصفات.",
+      "requirement_text": "إعداد خطة الأمان.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 36 - كتابة الأسعار"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً.",
+      "requirement_text": "تطوير الوحدات الأساسية: وحدة جمع البيانات، وحدة التحليل الوصفي، وحدة التقارير.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 36 - كتابة الأسعار"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "لا يجوز لمقدم العرض التعديل أو المحو أو الطمس على قائمة الأسعار.",
+      "requirement_text": "إجراء اختبارات وظيفية، أداء وأمان في بيئة تجريبية.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Technical",
-      "section_name": "## 36 - كتابة الأسعار"
+      "section_name": "## 64 - برنامج تقديم الأعمال"
     },
     {
-      "requirement_text": "يراعى في معايير تقييم العروض أن تكون واضحة وموضوعية ومحققة للمصلحة العامة.",
+      "requirement_text": "تنظيم جلسات تدريبية للمستخدمين الرئيسيين.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 64 - برنامج تقديم الأعمال"
+    },
+    {
+      "requirement_text": "تقديم تقارير دورية مفصلة لمراجعة الأداء وإجراء التعديلات اللازمة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 64 - برنامج تقديم الأعمال"
+    },
+    {
+      "requirement_text": "الالتزام بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 71 - مواصفات الجودة:"
+    },
+    {
+      "requirement_text": "إخطار الجهة الحكومية بما يتسبب أو قد يتسبب في عدم امتثال لمتطلبات الجودة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 71 - مواصفات الجودة:"
+    },
+    {
+      "requirement_text": "الالتزام بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 72 - مواصفات السلامة"
+    },
+    {
+      "requirement_text": "اتخاذ جميع الإجراءات والاحتياطات اللازمة للامتثال لهذه الأنظمة والقواعد.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Technical",
+      "section_name": "## 72 - مواصفات السلامة"
+    },
+    {
+      "requirement_text": "تكون معايير تقييم العروض واضحة وموضوعية ومحققة للمصلحة العامة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
       "category": "Administrative",
       "section_name": "## 50 - معايير تقييم العروض"
+    },
+    {
+      "requirement_text": "مراجعة جداول الكميات والأسعار الواردة في العرض وإجراء التصحيحات الحسابية اللازمة.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 51 - تصحيح العروض"
+    },
+    {
+      "requirement_text": "استبعاد العرض إذا تجاوزت الأخطاء الحسابية في الأسعار بعد تصحيحها أكثر من (10%) من قائمة الأسعار.",
+      "percentage": "Not Specified",
+      "deadline": "Not Specified",
+      "category": "Administrative",
+      "section_name": "## 51 - تصحيح العروض"
     },
     {
       "requirement_text": "تلتزم لجنة فحص العروض بمعايير التأهيل ومعايير التقييم وشروط المنافسة.",
@@ -176,18 +218,11 @@
       "section_name": "## 52 - فحص العروض"
     },
     {
-      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "requirement_text": "استبعاد العرض إذا لم تتوافر لدى صاحب العرض أياً من الشهادات المطلوبة.",
       "percentage": "Not Specified",
       "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 71 - مواصفات الجودة:"
-    },
-    {
-      "requirement_text": "يلتزم المتعاقد خلال جميع مراحل التنفيذ بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة.",
-      "percentage": "Not Specified",
-      "deadline": "Not Specified",
-      "category": "Technical",
-      "section_name": "## 72 - مواصفات السلامة"
+      "category": "Administrative",
+      "section_name": "## 52 - فحص العروض"
     }
   ]
 }

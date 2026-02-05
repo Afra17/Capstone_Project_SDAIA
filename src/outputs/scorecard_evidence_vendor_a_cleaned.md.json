@@ -1,20 +1,16 @@
 {
-  "vendor_name": "شركة تمكين للتقنيات",
-  "total_score_percent": 63.21,
-  "total_weighted_points": 49.3,
-  "max_possible_points": 78.0,
+  "vendor_name": "Vendor A",
+  "total_score_percent": 80.85,
+  "total_weighted_points": 66.3,
+  "max_possible_points": 82.0,
   "strengths": [],
   "gaps": [],
   "critical_missing": [
-    "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
-    "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
-    "يشمل العرض الفني المتطلبات التالية: فريق العمل.",
-    "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
-    "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي."
+    "إخطار الجهة الحكومية بما يتسبب أو قد يتسبب في عدم امتثال لمتطلبات الجودة."
   ],
   "scored_requirements": [
     {
-      "requirement_text": "تطوير أداة ذكاء اصطناعي تدمج البيانات من مصادر متعددة لتتبع حالة المبادرات.",
+      "requirement_text": "تطوير مساعد ذكي يعتمد على تقنيات الذكاء الاصطناعي لأتمتة جمع وتحليل بيانات وكالة التخطيط الاستراتيجي ومكتب تحقيق الرؤية بوزارة البلدية والإسكان.",
       "category": "Technical",
       "impact_weight": 5,
       "compliance_status": "مطابق",
@@ -22,278 +18,298 @@
       "weighted_points": 4.25,
       "evidence_quote": "تأتي هذه المنافسة لتطوير وتفعيل مساعد ذكي يعتمد على تقنيات الذكاء الاصطناعي لأتمتة جمع وتحليل بيانات مكتب تحقيق الرؤية.",
       "scoring_reason": [
-        "الدليل يوضح استخدام تقنيات الذكاء الاصطناعي.",
-        "يتضمن خطوات واضحة لتطوير الأداة.",
-        "يوفر تفاصيل عن عملية جمع وتحليل البيانات."
+        "تقديم دليل واضح على استخدام تقنيات الذكاء الاصطناعي.",
+        "تحديد خطوات متعددة لجمع وتحليل البيانات.",
+        "توفير تفاصيل حول كيفية تنفيذ المشروع."
       ],
       "risk_note": "",
       "evidence_strength": "strong",
       "evidence_match": "indirect"
     },
     {
-      "requirement_text": "تحليل الأداء وإنتاج تقارير ذكية.",
+      "requirement_text": "تحسين كفاءة المتابعة والتحليل لدعم اتخاذ القرارات المستندة إلى البيانات.",
       "category": "Technical",
       "impact_weight": 4,
       "compliance_status": "مطابق",
       "normalized_score": 0.85,
       "weighted_points": 3.4,
-      "evidence_quote": "إنتاج تقارير تنفيذية ولوحات قيادة قابلة للتخصيص والتصدير وتخدم متخذ القرار مباشرة.",
+      "evidence_quote": "يقلل الاعتماد على وسطاء التحليل، ويزيد سرعة الوصول للمعلومة، ويتيح تحليلاً حسب الطلب.",
       "scoring_reason": [
-        "يوفر دليل على إنتاج تقارير تنفيذية.",
-        "يتضمن تفاصيل عن لوحات القيادة.",
-        "يدعم اتخاذ القرار بشكل مباشر."
+        "تقديم دليل على تحسين كفاءة التحليل.",
+        "تحديد خطوات واضحة لتحسين الوصول للمعلومات.",
+        "توفير تفاصيل حول كيفية تنفيذ التحليل."
       ],
       "risk_note": "",
       "evidence_strength": "strong",
       "evidence_match": "indirect"
     },
     {
-      "requirement_text": "تنفيذ الأداة على مراحل تشمل التصميم.",
-      "category": "Technical",
-      "impact_weight": 5,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 4.25,
-      "evidence_quote": "المرحلة ٢: التصميم تشمل تصميم UX/UI ونماذج أولية.",
-      "scoring_reason": [
-        "يوضح خطوات التصميم بشكل واضح.",
-        "يتضمن تصميم UX/UI ونماذج أولية.",
-        "يوفر تفاصيل عن المعمارية والتكامل."
-      ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "تنفيذ الأداة على مراحل تشمل التطوير.",
-      "category": "Technical",
-      "impact_weight": 5,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 4.25,
-      "evidence_quote": "المرحلة ٣: التطوير تشمل بناء الوحدات الأساسية.",
-      "scoring_reason": [
-        "يوضح خطوات التطوير بشكل واضح.",
-        "يتضمن بناء الوحدات الأساسية.",
-        "يوفر تفاصيل عن تفعيل قواعد الأعمال."
-      ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "تنفيذ الأداة على مراحل تشمل النشر.",
+      "requirement_text": "جمع البيانات المتعلقة بحالة المبادرات والمشاريع من مصادر متعددة بشكل آلي.",
       "category": "Technical",
       "impact_weight": 4,
       "compliance_status": "مطابق",
       "normalized_score": 0.85,
       "weighted_points": 3.4,
-      "evidence_quote": "المرحلة ٥: النشر والإطلاق تشمل تركيب النظام على الخوادم.",
+      "evidence_quote": "إنشاء آلية لجمع بيانات المبادرات والمشاريع ومؤشرات الأداء من مصادر داخلية متعددة وتوحيدها.",
       "scoring_reason": [
-        "يوضح خطوات النشر بشكل واضح.",
-        "يتضمن تركيب النظام على الخوادم.",
-        "يوفر تفاصيل عن خطة Go-Live."
+        "تقديم دليل واضح على آلية جمع البيانات.",
+        "تحديد خطوات متعددة لجمع البيانات.",
+        "توفير تفاصيل حول كيفية توحيد البيانات."
       ],
       "risk_note": "",
       "evidence_strength": "strong",
       "evidence_match": "indirect"
     },
     {
-      "requirement_text": "ضمان التكامل مع أنظمة الوزارة الحالية.",
-      "category": "Technical",
-      "impact_weight": 5,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 4.25,
-      "evidence_quote": "الحل يضمن التكامل مع الأنظمة القائمة داخل الوزارة.",
-      "scoring_reason": [
-        "يوضح ضمان التكامل مع الأنظمة الحالية.",
-        "يتضمن تفاصيل عن تصميم التكامل.",
-        "يوفر خطوات واضحة لضمان عدم خروج البيانات."
-      ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "يلتزم مقدم العرض باتخاذ جميع الإجراءات اللازمة للتحقق من دقة المعلومات.",
+      "requirement_text": "تقديم تحليلات وتقارير مبسطة تدعم اتخاذ القرارات المستندة إلى البيانات.",
       "category": "Technical",
       "impact_weight": 4,
       "compliance_status": "مطابق",
       "normalized_score": 0.85,
       "weighted_points": 3.4,
-      "evidence_quote": "نقر بموجب هذا العرض بالالتزام بصحة ودقة جميع المعلومات المقدمة.",
+      "evidence_quote": "إنتاج تقارير تنفيذية ولوحات قيادة قابلة للتخصيص والتصدير.",
       "scoring_reason": [
-        "يوضح الالتزام بدقة المعلومات.",
-        "يتضمن إجراءات للتحقق من المعلومات.",
-        "يوفر تفاصيل عن تدقيق دوري."
+        "تقديم دليل على إنتاج تقارير تنفيذية.",
+        "تحديد خطوات واضحة لتحليل البيانات.",
+        "توفير تفاصيل حول كيفية تخصيص التقارير."
       ],
       "risk_note": "",
       "evidence_strength": "strong",
       "evidence_match": "indirect"
     },
     {
-      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الخبرات السابقة.",
+      "requirement_text": "تطبيق معايير الأمن السيبراني (ISO/IEC 27001) وإدارة الجودة (ISO/IEC 9001).",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "تطبيق معايير الأمن والخصوصية بما في ذلك: الامتثال لمتطلبات الأمن السيبراني الوطنية.",
+      "scoring_reason": [
+        "تقديم دليل واضح على تطبيق معايير الأمن.",
+        "تحديد خطوات متعددة لضمان الامتثال.",
+        "توفير تفاصيل حول كيفية تنفيذ المعايير."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تسهيل عملية جمع البيانات من مصادر متعددة وتوحيدها بطريقة آلية.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 3.4,
+      "evidence_quote": "جمع البيانات من مصادر متعددة؛ بشكل دوري أو لحظي مع توحيدها والتحقق من جودتها.",
+      "scoring_reason": [
+        "تقديم دليل واضح على جمع البيانات.",
+        "تحديد خطوات واضحة لتوحيد البيانات.",
+        "توفير تفاصيل حول كيفية التحقق من جودة البيانات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تقديم تحليلات تنبؤية ووصفية دقيقة تُبرز الانحرافات والاتجاهات المستقبلية.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "إنتاج تحليلات دقيقة، واكتشاف اتجاهات وتوقعات مستقبلية للمؤشرات.",
+      "scoring_reason": [
+        "تقديم دليل واضح على التحليلات التنبؤية.",
+        "تحديد خطوات متعددة لتحليل البيانات.",
+        "توفير تفاصيل حول كيفية اكتشاف الاتجاهات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "توفير وصول ذاتي لجميع أصحاب المصلحة إلى تقارير ومعلومات محدثة باستمرار.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 3.4,
+      "evidence_quote": "تمكين أصحاب المصلحة من الاطلاع على حالة المبادرات والمؤشرات عبر لوحات قيادة وتقارير موحدة.",
+      "scoring_reason": [
+        "تقديم دليل واضح على توفير الوصول الذاتي.",
+        "تحديد خطوات واضحة لتحديث المعلومات.",
+        "توفير تفاصيل حول كيفية تصميم اللوحات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "متابعة مؤشرات الأداء وربطها بمسببات النجاح أو التعثر لدعم تحقيق الأهداف القطاعية.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 3.4,
+      "evidence_quote": "الإجابة على أسئلة تحليلية داخلية حول حالة المبادرات وأداء المؤشرات.",
+      "scoring_reason": [
+        "تقديم دليل واضح على متابعة الأداء.",
+        "تحديد خطوات واضحة لتحليل الأسباب.",
+        "توفير تفاصيل حول كيفية تقديم التقارير."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تقديم دعم فني مستمر لمدة 12 شهر بعد النشر مع تقارير تقييم الأداء.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "تشغيل مركز دعم وفق SLA وتقارير تقييم الأداء.",
+      "scoring_reason": [
+        "تقديم دليل واضح على الدعم الفني المستمر.",
+        "تحديد خطوات واضحة لتقديم التقارير.",
+        "توفير تفاصيل حول كيفية معالجة البلاغات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "إجراء دراسة شاملة للوضع الحالي وتحديد الفجوات في أنظمة وتقنيات البيانات.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "تقرير الوضع الحالي والفجوات.",
+      "scoring_reason": [
+        "تقديم دليل واضح على إجراء الدراسة.",
+        "تحديد خطوات واضحة لتحديد الفجوات.",
+        "توفير تفاصيل حول كيفية تحليل الأنظمة."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تقييم مصادر البيانات (مثل منصات Oracle SAP وغيرها) وتحديد آليات التكامل.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "تحديد نقاط التكامل وتوزيع الأدوار مع وكالة التحول الرقمي.",
+      "scoring_reason": [
+        "تقديم دليل واضح على تقييم مصادر البيانات.",
+        "تحديد خطوات واضحة لتحديد آليات التكامل.",
+        "توفير تفاصيل حول كيفية استخدام APIs."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "إعداد خارطة طريق تفصيلية تشمل أهداف المشروع ومتطلبات التكامل والأمن.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "إعداد خطة الربط وأمن البيانات.",
+      "scoring_reason": [
+        "تقديم دليل واضح على إعداد خارطة الطريق.",
+        "تحديد خطوات واضحة لتصميم المعمارية.",
+        "توفير تفاصيل حول كيفية إعداد خطة التكامل."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "تصميم تجربة المستخدم وواجهة الاستخدام.",
+      "category": "Technical",
+      "impact_weight": 4,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 3.4,
+      "evidence_quote": "تصميم UX/UI ونماذج أولية.",
+      "scoring_reason": [
+        "تقديم دليل واضح على تصميم تجربة المستخدم.",
+        "تحديد خطوات واضحة لتصميم الواجهات.",
+        "توفير تفاصيل حول كيفية مراجعة النماذج."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "إجراء اختبارات وظيفية، أداء وأمان في بيئة تجريبية.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "اختبارات وظيفية (Unit/Integration/System) واختبارات أداء (Load/Stress).",
+      "scoring_reason": [
+        "تقديم دليل واضح على إجراء الاختبارات.",
+        "تحديد خطوات واضحة لتنفيذ الاختبارات.",
+        "توفير تفاصيل حول كيفية معالجة الملاحظات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "الالتزام بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "category": "Technical",
+      "impact_weight": 5,
+      "compliance_status": "مطابق",
+      "normalized_score": 0.85,
+      "weighted_points": 4.25,
+      "evidence_quote": "الالتزام الكامل بدراسة الشروط والمواصفات.",
+      "scoring_reason": [
+        "تقديم دليل واضح على الالتزام بالمواصفات.",
+        "تحديد خطوات واضحة لمراجعة المتطلبات.",
+        "توفير تفاصيل حول كيفية قياس جودة البيانات."
+      ],
+      "risk_note": "",
+      "evidence_strength": "strong",
+      "evidence_match": "indirect"
+    },
+    {
+      "requirement_text": "إخطار الجهة الحكومية بما يتسبب أو قد يتسبب في عدم امتثال لمتطلبات الجودة.",
       "category": "Technical",
       "impact_weight": 4,
       "compliance_status": "غير مطابق",
       "normalized_score": 0.0,
       "weighted_points": 0.0,
       "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
-      "scoring_reason": [],
-      "risk_note": "لا يوجد دليل واضح.",
-      "evidence_strength": "weak",
-      "evidence_match": "off_topic"
-    },
-    {
-      "requirement_text": "يشمل العرض الفني المتطلبات التالية: الجدول الزمني.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "غير مطابق",
-      "normalized_score": 0.0,
-      "weighted_points": 0.0,
-      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
-      "scoring_reason": [],
-      "risk_note": "لا يوجد دليل واضح.",
-      "evidence_strength": "weak",
-      "evidence_match": "off_topic"
-    },
-    {
-      "requirement_text": "يشمل العرض الفني المتطلبات التالية: فريق العمل.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "غير مطابق",
-      "normalized_score": 0.0,
-      "weighted_points": 0.0,
-      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
-      "scoring_reason": [],
-      "risk_note": "لا يوجد دليل واضح.",
-      "evidence_strength": "weak",
-      "evidence_match": "off_topic"
-    },
-    {
-      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الكميات شاملا الأسعار وجميع الضرائب والرسوم.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 3.4,
-      "evidence_quote": "جدول التسعير التفصيلي حسب المراحل يشمل جميع الأسعار.",
       "scoring_reason": [
-        "يوضح جدول التسعير التفصيلي.",
-        "يتضمن جميع الأسعار والضرائب.",
-        "يوفر تفاصيل واضحة عن كل بند."
+        "عدم وجود دليل واضح على الالتزام بالمتطلبات.",
+        "عدم تقديم تفاصيل حول كيفية الإخطار.",
+        "عدم وجود منهجية واضحة."
       ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "يشمل العرض المالي المتطلبات التالية: جدول الدفعات.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "غير مطابق",
-      "normalized_score": 0.0,
-      "weighted_points": 0.0,
-      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
-      "scoring_reason": [],
       "risk_note": "لا يوجد دليل واضح.",
       "evidence_strength": "weak",
       "evidence_match": "off_topic"
     },
     {
-      "requirement_text": "يشمل العرض المالي المتطلبات التالية: الضمان الابتدائي.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "غير مطابق",
-      "normalized_score": 0.0,
-      "weighted_points": 0.0,
-      "evidence_quote": "لا يوجد دليل واضح في عرض المورد.",
-      "scoring_reason": [],
-      "risk_note": "لا يوجد دليل واضح.",
-      "evidence_strength": "weak",
-      "evidence_match": "off_topic"
-    },
-    {
-      "requirement_text": "يجب على المتنافس تقديم سعره وفقا للشروط والمواصفات.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 3.4,
-      "evidence_quote": "تم تسعير جميع عناصر نطاق العمل دون استثناء.",
-      "scoring_reason": [
-        "يوضح تسعير جميع العناصر.",
-        "يتضمن الالتزام بالشروط والمواصفات.",
-        "يوفر تفاصيل واضحة عن كل بند."
-      ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "تدوين أسعار العرض الإفرادية والإجمالية في جداول الكميات رقماً وكتابةً.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 3.4,
-      "evidence_quote": "تم تقديم الأسعار بشكل مفصل في جدول التسعير.",
-      "scoring_reason": [
-        "يوضح تقديم الأسعار بشكل مفصل.",
-        "يتضمن الأسعار رقماً وكتابةً.",
-        "يوفر تفاصيل واضحة عن كل بند."
-      ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "لا يجوز لمقدم العرض التعديل أو المحو أو الطمس على قائمة الأسعار.",
-      "category": "Technical",
-      "impact_weight": 4,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 3.4,
-      "evidence_quote": "تم التأكيد على عدم وجود أي تعديل أو محو في الأسعار.",
-      "scoring_reason": [
-        "يوضح الالتزام بقائمة الأسعار.",
-        "يتضمن عدم إجراء أي تعديلات.",
-        "يوفر تفاصيل واضحة عن الأسعار."
-      ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "يلتزم المتعاقد بمواصفات الجودة المطلوبة في تنفيذ النطاق المطلوب.",
+      "requirement_text": "الالتزام بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة والصحة والبيئة.",
       "category": "Technical",
       "impact_weight": 5,
       "compliance_status": "مطابق",
       "normalized_score": 0.85,
       "weighted_points": 4.25,
-      "evidence_quote": "تم التأكيد على الالتزام بمواصفات الجودة.",
+      "evidence_quote": "الالتزام بجميع الأنظمة واللوائح المعمول بها.",
       "scoring_reason": [
-        "يوضح الالتزام بمعايير الجودة.",
-        "يتضمن تقديم تقارير دورية عن الجودة.",
-        "يوفر تفاصيل عن اختبارات الجودة."
-      ],
-      "risk_note": "",
-      "evidence_strength": "strong",
-      "evidence_match": "indirect"
-    },
-    {
-      "requirement_text": "يلتزم المتعاقد خلال جميع مراحل التنفيذ بجميع الأنظمة والقواعد المطبقة في المملكة بشأن السلامة.",
-      "category": "Technical",
-      "impact_weight": 5,
-      "compliance_status": "مطابق",
-      "normalized_score": 0.85,
-      "weighted_points": 4.25,
-      "evidence_quote": "تم التأكيد على الالتزام بجميع الأنظمة والقواعد المطبقة.",
-      "scoring_reason": [
-        "يوضح الالتزام بقوانين السلامة.",
-        "يتضمن تقديم تقارير دورية عن السلامة.",
-        "يوفر تفاصيل عن تدقيق دوري للامتثال."
+        "تقديم دليل واضح على الالتزام بالأنظمة.",
+        "تحديد خطوات واضحة لمراجعة الامتثال.",
+        "توفير تفاصيل حول كيفية تطبيق معايير السلامة."
       ],
       "risk_note": "",
       "evidence_strength": "strong",
